@@ -77,61 +77,86 @@ let stepMove = {
 	 * 
 	 */
 	getWheelCount: function(yControll) {
+
 		// 这个变量默认就是false
 		if(stepMove.scrollingFlag == false) {
+
 			// 由于火狐的deltaY和谷歌的不一样 所以这里要乘以这个数
 			// 这也是前面修改addFirefor才能兼容火狐的原因
 			yControll = Math.abs(event.deltaY * stepMove.addFirefox);
+
+			//			console.log("yControll:  "+ yControll +"stepMove.wheelCount:  "+stepMove.wheelCount + "stepMove.wheelCount1  :"  +stepMove.wheelCount1 );
+
 			// console.log("Count：" + wheelCount + ", Count1：" + wheelCount1 + ", deltaY：" + yControll);
 			if(yControll > stepMove.wheelCount || yControll > stepMove.wheelCount - stepMove.wheelCount1 * yControll) {
+
 				stepMove.wheelCount += (stepMove.wheelCount + yControll) / stepMove.wheelCount1;
 				//				console.log(stepMove.wheelCount);
 				if(Math.abs(stepMove.wheelCount) > stepMove.decisionCoefficient && stepMove.scrollingFlag === false) {
 					// console.log(wheelCount)
 					// console.log(stepMove.wheelCount + "!");
+
 					stepMove.scrollPage();
+
 				} else {
 					// console.log("out1");
+
 					stepMove.wheelCount1 = stepMove.wheelCount = null;
 				}
 			} else {
 				// console.log("out2");
+
 				stepMove.wheelCount1 = stepMove.wheelCount = null;
 			}
 		} else {
 			// console.log("out3");
 			// console.log(stepMove.wheelCount);
+
 			stepMove.wheelCount1 = stepMove.wheelCount = null;
 		}
 		// stepMove.scrollPage();
-		console.log("yControll"+yControll);
+		//		console.log("yControll"+yControll);
 		// console.log(stepMove.decisionCoefficient ==  stepMove.decisionCoefficient)
 	},
 	/**
 	 * 滚动指定元素
 	 */
 	scrollPage: function(event) {
+		console.log("动了，龙龙你个弟弟");
+		//		console.log("  stepMove.scrollingFlag  " +stepMove.scrollingFlag);
+		//		console.log("  stepMove.wheelCount1  " +stepMove.wheelCount1);
+		//		console.log("  stepMove.wheelCount  " +stepMove.wheelCount);
+		//		console.log("  stepMove.touchCount  " +stepMove.touchCount);
+		//		console.log("  downTimes  " + this.downTimes);
+		//		console.log("  upTimes  " + this.upTimes);
+
 		stepMove.scrollingFlag = true;
 		stepMove.wheelCount1 = stepMove.wheelCount = null;
 		stepMove.touchCount = null;
 		// 算出现在的净向下次数
 		let down = this.downTimes - this.upTimes;
-		console.log(down);
+		//		console.log(down);
 		//console.log(down + " " + this.maxDown + " " + this.maxUp);
 		// 如果这个down比maxDown小，就能继续向下
 		// 如果负down比maxUp小，就能继续向上
 		// 这个是向下滚动                                                                                                                            
 		if(stepMove.touchDirection === "up" && down < this.maxDown || stepMove.wheelDirection == "down" && stepMove.targetElement != null && down < this.maxDown) {
+			//		console.log("11");
+
 			stepMove.changeCount = stepMove.changeCount - stepMove.perDisplacement; //用trasfrom要改变这里的正负(原本是+)
 			document.querySelector(stepMove.targetElement).style.transform = "translate" + stepMove.axisDirection.toUpperCase() + "(" + stepMove.changeCount + stepMove.displacementUnit + ")";
 			this.downTimes++;
 			stepMove.getTouchStart(event);
 		} else if(stepMove.touchDirection === "down" && (-1 * down) < this.maxUp || stepMove.wheelDirection == 'up' && stepMove.targetElement != null && (-1 * down) < this.maxUp) {
+			//		console.log("12");
+
 			stepMove.changeCount = stepMove.changeCount + stepMove.perDisplacement;
 			document.querySelector(stepMove.targetElement).style.transform = "translate" + stepMove.axisDirection.toUpperCase() + "(" + stepMove.changeCount + stepMove.displacementUnit + ")";
 			this.upTimes++;
 			stepMove.getTouchStart(event);
 		} else {
+			//		console.log("13");
+
 			this.scrollingFlag = false;
 		}
 		// stepMove.getTouchStart(event);
@@ -139,17 +164,27 @@ let stepMove = {
 		//console.log(stepMove.scrollingFlag);
 
 	},
+
 	getTouchStart: (event) => {
-		// console.log(event);
+		//		console.log("getTouchStart");
+		//		console.log(event);
 		stepMove.startY = event.targetTouches[0].clientY;
+		//		console.log("  stepMove.startY  "  + stepMove.startY);
 		stepMove.startX = event.targetTouches[0].clientX;
+		//		console.log("  stepMove.startX  "  + stepMove.startX);
+
 		stepMove.getTouchDirection(event);
-		// console.log(stepMove.startX+" "+stepMove.startY)
+		//		 console.log(stepMove.startX+" "+stepMove.startY)
 	},
 	getTouchDirection: () => {
+		//		console.log("getTouchDirection");
+
 		let y = stepMove.startY - event.targetTouches[0].clientY;
+		//		console.log("  y  " + y);
 		y > 0 ? stepMove.touchDirection = 'up' : stepMove.touchDirection = 'down';
+		//		console.log("  stepMove.touchCount1  " +stepMove.touchCount);
 		stepMove.touchCount++;
+		//		console.log("  stepMove.touchCount2  " +stepMove.touchCount);
 		stepMove.getTouchCount(y, event);
 	},
 	touchStepByStep: (targetElement, decisionCoefficient = 100, axisDirection = "y", perDisplacement = 100, displacementUnit = "px") => {
@@ -167,18 +202,24 @@ let stepMove = {
 		});
 	},
 	getTouchCount: (y, event) => {
+		//		console.log("11");
 		//console.log("y:" + y + " Count:" + stepMove.touchCount)
 		if(stepMove.scrollingFlag == false) {
+			//		console.log("12");
 			if(Math.abs(y) / stepMove.touchCount > 50 && Math.abs(y) / stepMove.touchCount < 100) {
+				//		console.log("13");
 				if(Math.abs(y) > stepMove.decisionCoefficient) {
+					//		console.log("14");
 					// document.querySelector('html').style.backgroundColor = "red"
 					stepMove.scrollPage(event);
 				}
 			} else {
+				//		console.log("15");
 				y = stepMove.touchCount = 1
 				// document.querySelector('html').style.backgroundColor = ""
 			}
 		} else {
+			//		console.log("16");
 			y = stepMove.touchCount = 1;
 		}
 	},
@@ -208,7 +249,7 @@ stepMove.touchStepByStep("#allpage", 50, "y", 100, "%", 0, 4);
 
 document.addEventListener("wheel", function() {
 	let pagecount = document.getElementById("allpage");
-	
+
 	if(pagecount.style.transform == "translateY(-100%)" && stepMove.wheelDirection === "down" || pagecount.style.transform == "translateY(-100%)" && stepMove.wheelDirection === "up") {
 		//			console.log("scroll 2 access");
 		$("#pageTwo_head").addClass("bounceInLeft");
@@ -219,7 +260,7 @@ document.addEventListener("wheel", function() {
 		document.getElementById("pageTwo_center").style.opacity = 1;
 
 	} else if(pagecount.style.transform == "translateY(-200%)" && stepMove.wheelDirection === "down" || pagecount.style.transform == "translateY(0%)" && stepMove.wheelDirection === "up") {
-		console.log("qwq");
+		//		console.log("qwq");
 		$("#pageTwo_head").removeClass("bounceInLeft");
 		$("#pageTwo_head").addClass("bounceOutLeft");
 		document.getElementById("pageTwo_head").style.opacity = 0;
@@ -244,7 +285,7 @@ document.addEventListener("touchmove", function() {
 		document.getElementById("pageTwo_center").style.opacity = 1;
 
 	} else if(pagecount.style.transform == "translateY(-200%)" && stepMove.touchDirection === "down" || pagecount.style.transform == "translateY(0%)" && stepMove.touchDirection === "up") {
-		console.log("qwq");
+		//		console.log("qwq");
 		$("#pageTwo_head").removeClass("bounceInLeft");
 		$("#pageTwo_head").addClass("bounceOutLeft");
 		document.getElementById("pageTwo_head").style.opacity = 0;
@@ -256,6 +297,43 @@ document.addEventListener("touchmove", function() {
 
 });
 
+/*****************************/
+
+function bottomEffectOne() {
+
+	$("#pageTwo_head").addClass("bounceInLeft");
+	$("#pageTwo_head").removeClass("bounceOutLeft");
+	document.getElementById("pageTwo_head").style.opacity = 1;
+	$("#pageTwo_center").removeClass("fontOut");
+	$("#pageTwo_center").addClass("fontIn");
+	document.getElementById("pageTwo_center").style.opacity = 1;
+
+	/********************/
+	stepMove.touchDirection = "up";
+	stepMove.scrollPage();
+	/*******************/
+
+}
+
+function bottomEffectTwo() {
+
+	$("#pageTwo_head").removeClass("bounceInLeft");
+	$("#pageTwo_head").addClass("bounceOutLeft");
+	document.getElementById("pageTwo_head").style.opacity = 0;
+	$("#pageTwo_center").removeClass("fontIn");
+	$("#pageTwo_center").addClass("fontOut");
+	document.getElementById("pageTwo_center").style.opacity = 0.1;
+
+	/********************/
+	stepMove.touchDirection = "up";
+	stepMove.scrollPage();
+	/*******************/
+
+}
+
+function bottomEffectFive() {
+	alert("下面什么都没有了");
+}
 //document.addEventListener("wheel",function(){
 //			let pagecount = document.getElementById("allpage");
 //
