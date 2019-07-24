@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title></title>
+		<link rel="stylesheet" href="css3/test.css" />
+		<link rel="stylesheet" href="css1/style.css">
+		<link rel="stylesheet" href="css2/pageTwo.css" />
+		<link rel="stylesheet" href="css2/jquery.fullPage.css" />
+		<link rel="stylesheet" href="css2/pageTwo_donghua.css" />
+
+		<link rel="stylesheet" href="css3/pageThree.css" />
+
+		<!--<style>
+			#pc-code {
+				position: fixed;
+				left: 0;
+				top: 0;
+				height: 100%;
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				z-index: 1000;
+				background: rgba(0, 0, 0, .95);
+				color: #fff;
+			}
+			
+			#pc-code .pc-img {
+				max-width: 300px;
+				opacity: 0;
+				animation: mymove 0.5s forwards;
+				animation-delay: 0.5s;
+			}
+			
+			#pc-code .pc-text {
+				margin-top: 3rem;
+				font-size: 1.5rem;
+				opacity: 0;
+				animation: mymove 0.5s forwards;
+				animation-delay: 0.5s;
+			}
+			
+			@keyframes mymove {
+				from {
+					opacity: 0;
+				}
+				to {
+					opacity: 1;
+				}
+			}
+			
+			@-webkit-keyframes mymove
+
+			
+			{
+				from {
+					opacity: 0;
+				}
+				to {
+					opacity: 1;
+				}
+			}
+		</style>-->
+
+		<style>
+			* {
+				margin: 0px;
+				padding: 0px;
+				/*font-size: 0px;*/
+			}
+			
+			body {
+				/*overflow: scroll;*/
+			}
+			
+			#pageTwo {
+				background-image: url(img2/pageTwo_bg2.png);
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			
+			h3 {
+				text-align: center;
+				font-size: 100px;
+			}
+			
+			@font-face {
+				font-family: 'fanti';
+				src: url('font/fanti.ttf');
+			}
+			
+			@font-face {
+				font-family: 'mini';
+				src: url('font/mini.ttf');
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--<div id="pc-code">
+			<div class="pc-img">
+				<img src="img1/cli_300px.jpg" onclick="return false">
+			</div>
+			<div class="pc-text" id="pc-text">
+				<h4>请使用手机扫描二维码进行访问~</h4>
+			</div>
+		</div>-->
+		<div id="fullpage">
+			<div class="pageOne_first_page section" id="pageOne_first_page">
+				<div class="pageOne_first_page_title">
+					<p>三翼工作室</p><span>.</span>
+					<p>2019&nbsp;招新</p>
+					<p>踏出第一步，</p>
+					<p>这光怪陆离的世界和我一起涌向你</p>
+				</div>
+				<div id="pageOne_bg">
+					<div class="pageOne_sky"><img src="img1/sky.png" id="pageOne_sky" /></div>
+					<div class="pageOne_sea"><img src="img1/sea.png" id="pageOne_sea" /></div>
+					<div class="pageOne_cloud_left"><img src="img1/cloud_left.png" id="pageOne_cloud_left" /></div>
+					<div class="pageOne_cloud_right"><img src="img1/cloud_right.png" id="pageOne_cloud_right"></div>
+					<div class="pageOne_front_mount"><img src="img1/front_mount.png" id="pageOne_front_mount" /></div>
+					<div class="pageOne_little_cloud"><img src="img1/little_cloud.png" id="pageOne_little_cloud" /></div>
+					<div class="pageOne_little_cloud_two"><img src="img1/little_cloud_two.png" id="pageOne_little_cloud_two"></div>
+					<div class="pageOne_monster"><img src="img1/monster.png" id="pageOne_monster" /></div>
+					<div class="pageOne_water_cloud_left"><img src="img1/water_cloud_left.png" id="pageOne_water_cloud_left" /></div>
+					<div class="pageOne_water_cloud_right"><img src="img1/water_cloud_right.png" id="pageOne_water_cloud_right"></div>
+					<div class="pageOne_wave_right"><img src="img1/wave_right.png" id="pageOne_wave_right" /></div>
+					<div class="pageOne_wave_left"><img src="img1/wave_left.png" id="pageOne_wave_left" /></div>
+					<div class="pageOne_green_moon"><img src="img1/green_moon.png" id="pageOne_green_moon"></div>
+				</div>
+				<img class="bottomArrow" src="img2/jiant.png" onclick="bottomEffect()" />
+			</div>
+			<div class="section" id="pageTwo">
+				<div id="pageTwo_treeBox">
+					<div id="pageTwo_tree">
+						<img class="pageTwo_flower" id="pageTwo_flowerOne" src="img2/pageTwo_yinghua1.png" />
+						<img class="pageTwo_flower" id="pageTwo_flowerTwo" src="img2/pageTwo_yinghua1.png" />
+						<img class="pageTwo_flower" id="pageTwo_flowerThree" src="img2/pageTwo_yinghua1.png" />
+						<img class="pageTwo_flower" id="pageTwo_flowerFour" src="img2/pageTwo_yinghua1.png" />
+						<img class="pageTwo_flower" id="pageTwo_flowerFive" src="img2/pageTwo_yinghua1.png" />
+					</div>
+
+				</div>
+				<div id="pageTwo_cloudBox">
+					<div id="pageTwo_cloudRight"></div>
+					<div id="pageTwo_cloudLeft"></div>
+				</div>
+				<div id="pageTwo_head">
+					<div id="pageTwo_headOne" class="pageTwo_fontSizeOne">三翼工作室</div>
+					<div id="pageTwo_headTwo" class="pageTwo_fontSizeTwo">Sunestudio</div>
+					<div id="pageTwo_headThree" class="pageTwo_fontSizeTwo">快乐 · 激情 · 梦想</div>
+					<div id="pageTwo_headFour" class="pageTwo_fontSizeTwo">你职场生涯的第一步</div>
+				</div>
+				<div id="pageTwo_center">
+					<div id="pageTwo_centerTittle" class="pageTwo_fontSizeOne">工作室概述</div>
+					<div id="pageTwo_centerFontOne" class="pageTwo_fontSizeTwo">2005年，伴随着共青团湘潭大学委员会网络建设工作的推进，负责技术研发和网站运营的三翼工作室诞生了。三翼工作室走过十四载春秋，研发并运营了一系列服务师生、服务湘大的产品，受到师生好评。</div>
+					<div id="pageTwo_centerFontTwo" class="pageTwo_fontSizeTwo">三翼工作室以互联网出身，旗下有众多自主研发的在运营网络产品，但其发展却并不囿于线上。作为校级组织之一的三翼，既是校园媒体中的佼佼者，又是校内各种大型活动的承办方。湘大，因为有三翼而更精彩。</div>
+					<div id="pageTwo_centerFontThree"></div>
+				</div>
+				<div id="pageTwo_footer">
+					<div id="pageTwo_footerOne"></div>
+					<div id="pageTwo_footerTwo"></div>
+					<div id="pageTwo_footerThree"></div>
+				</div>
+				<img class="bottomArrow" src="img2/jiant.png" onclick="bottomEffect()" />
+			</div>
+			<div class="section" id="pageThree">
+				<div id="pageThreeDemo">
+					<div id="pageThreeBox" >
+						<h3>父亲日期父亲日期父亲日期</h3>
+					</div>
+				</div>
+
+			</div>
+			<div class="section" id="pageFour">第四屏<img class="bottomArrow" src="img2/jiant.png" onclick="bottomEffect()" /></div>
+		</div>
+		<!--js1/index.js"已被合并进入js2/pageTwo_setting.js-->
+		<!--<script type="text/javascript" src="js3/stepMove.js" ></script>-->
+		<script src="js2/jquery-1.8.3.min.js"></script>
+		<script src="js2/jquery.fullPage.min.js"></script>
+		<script src="js2/pageTwo_bathFullpage.js"></script>
+		<script src="js2/pageTwo_setting.js"></script>
+		<script type="text/javascript" src="js3/test.js"></script>
+
+		<!-- 下面的是二维码部分的js   -->
+		<!--<script>
+			function browserRedirect() {
+				var sUserAgent = navigator.userAgent.toLowerCase();
+
+				var bIsIphone = sUserAgent.match(/iphone os/i) == 'iphone os';
+				var bIsMidp = sUserAgent.match(/midp/i) == 'midp';
+				var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == 'rv:1.2.3.4';
+				var bIsUc = sUserAgent.match(/ucweb/i) == 'web';
+				var bIsCE = sUserAgent.match(/windows ce/i) == 'windows ce';
+				var bIsWM = sUserAgent.match(/windows mobile/i) == 'windows mobile';
+				var bIsAndroid = sUserAgent.match(/android/i) == 'android';  
+				if(bIsIphone || bIsMidp || bIsUc7 || bIsUc || bIsCE || bIsWM || bIsAndroid) {    
+					document.getElementById("pc-code").style.display = 'none';
+					console.log("您的浏览设备为：phone");   
+				} else {
+					document.getElementById("pc-code").style.display = 'flex';
+					console.log("您的浏览设备为：pc");   
+				}  
+			}  
+			browserRedirect();
+		</script>-->
+
+	</body>
+
+</html>

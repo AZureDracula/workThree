@@ -1,0 +1,211 @@
+#pageTwo_head {
+	position: absolute;
+	opacity: 0;
+	left: 8.444444%;
+	top: 4.800000%;
+	width: 37.333333%;
+	height: 12.217625%;
+	/*background-color: red;*/
+}
+
+.pageTwo_fontSizeOne {
+	font-size: 20px;
+}
+
+.pageTwo_fontSizeTwo {
+	font-size: 12px;
+}
+
+.pageTwo_fontSizeOnePc {
+	font-size: 40px;
+}
+
+.pageTwo_fontSizeTwoPc {
+	font-size: 24px;
+}
+
+#pageTwo_treeBox {
+	display: inline-block;
+}
+
+#pageTwo_tree {
+	display: inline-block;
+	/*z-index: 1;*/
+	/*height: 19.725000%;*/
+	height: 17.7125%;
+	/*width : 57.311111%;*/
+	width: 55.555555%;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background-image:  url(../img2/pageTwo_tree.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#pageTwo_cloudBox {
+	display: block;
+	z-index: 2;
+	width: 100%;
+	height: 5.6875%;
+	/*background-color: red;*/
+	position: absolute;
+	top: 20%;
+}
+
+#pageTwo_cloudRight {
+	display: inline-block;
+	float: left;
+	margin-left: 5.833333%;
+	width: 93.055555%;
+	height: 50%;
+	background-image: url(../img2/pageTwo_cloudRight.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	animation: cloudright 120s linear;
+	-webkit-animation: cloudright 120s linear;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+#pageTwo_cloudLeft {
+	display: inline-block;
+	float: left;
+	margin-left: 1.388888%;
+	width: 93.055555%;
+	height: 50%;
+	background-image: url(../img2/pageTwo_cloudLeft.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	animation: cloudleft 120s linear;
+	-webkit-animation: cloudleft 120s linear;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+
+
+
+.pageTwo_flower {
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	width: 4.8%;
+}
+
+#pageTwo_flowerOne {
+	left: 15%;
+	top: 32%;
+	/*background-color: red;*/
+	animation: flowerOne 4s linear;
+	-webkit-animation: flowerOne 4s linear;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+#pageTwo_flowerTwo {
+	left: 21%;
+	top: 28%;
+	animation: flowerTwo 4s linear;
+	-webkit-animation: flowerTwo 4s linear;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	/*background-color: blue;*/
+}
+
+#pageTwo_flowerThree {
+	left: 34%;
+	top: 23%;
+	animation: flowerThree 4s linear;
+	-webkit-animation: flowerThree 4s linear;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+#pageTwo_flowerFour {
+	left: -11%;
+	top: 44%;
+	animation: flowerFour 4s linear;
+	-webkit-animation: flowerFour 4s linear;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+#pageTwo_flowerFive {
+	left: 26%;
+	top: 52%;
+	animation: flowerFive 4s linear;
+	-webkit-animation: flowerFive 4s linear;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+#pageTwo_footer {
+	display: block;
+	position: absolute;
+	top: 61.375%;
+	width: 100%;
+	height: 15.625%;
+	background-color: #DDDDDD;
+}
+
+#pageTwo_footerOne {
+	float: left;
+	margin-left: 12%;
+	margin-right: 2.333333%;
+	height: 100%;
+	width: 23%;
+	background-color: #E4EFFB;
+}
+
+#pageTwo_footerTwo {
+	float: left;
+	background-color: #F1EA00;
+	height: 100%;
+	margin-right: 2.333333%;
+	width: 23%;
+}
+
+#pageTwo_footerThree {
+	height: 100%;
+	float: left;
+	width: 23%;
+	margin-right: 12%;
+	background-color: #FFE4C4;
+}
+
+
+#pageTwo_center {
+	opacity: 0.1;
+	display: inline-block;
+	position: absolute;
+	top: 25.5625%;
+	left: ;
+	width: 100%;
+	height: 35.937500%;
+	background-color: bisque;
+	text-align: center;
+}
+
+#pageTwo_centerTittle {
+	display: inline-block;
+	width: 80%;
+	height: 20%;
+	text-align: center;
+}
+#pageTwo_centerFontOne{
+	display: inline-block;
+	width: 80%;
+	height: 40%;
+	text-align: center;
+}
+
+#pageTwo_centerFontTwo{
+	display: inline-block;
+	width: 80%;
+	height:40%;
+	text-align: center;
+}
