@@ -34,7 +34,7 @@
 	background-image: url(../img3/pageThreeBank.png);
 	background-size: 100% 100%;
 	background-position: center;
-	transform: translate3D(50vh, 10vh, 0vh) scale(1);
+	transform: translate3D(50vh, 10vh, -5px) scale(6);
 }
 #pageThreeRock{
 	position: absolute;
@@ -47,5 +47,5 @@
 	background-image: url(../img3/pageThreeRock.png);
 	background-size: 100% 100%;
 	background-position: center;
-	transform: translate3D(60vh, 20vh, -1px) scale(2);
+	transform: translate3D(60vh, 20vh, -10) scale(11);
 }
