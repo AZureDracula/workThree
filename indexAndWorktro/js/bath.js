@@ -1,4 +1,4 @@
-let pagecount = document.getElementById("allpage");
+
 
 function bottomEffectOne() {
 	$("#pageTwo_head").addClass("bounceInLeft");
