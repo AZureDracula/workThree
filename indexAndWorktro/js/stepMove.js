@@ -13,11 +13,10 @@ let stepMove = {
 	startY: 0,
 	upTimes: 0,
 	downTimes: 0,
-	
-	
-	touchUpTimes:0,
-	touchDownTimes:0,
-	
+
+	touchUpTimes: 0,
+	touchDownTimes: 0,
+
 	/**
 	 * 这个方法可以让指定目标元素根据滚轮操作来移动位置。其移动的方式是步进式的，可以通过三个可选参数来调整手感。
 	 * 
@@ -53,7 +52,7 @@ let stepMove = {
 			stepMove.wheelCount1 = stepMove.wheelCount = null;
 			stepMove.scrollingFlag = false;
 		});
-		
+
 	},
 	/**
 	 * 获取滚动方向
@@ -69,9 +68,9 @@ let stepMove = {
 		stepMove.wheelCount++;
 		stepMove.wheelCount1++;
 		stepMove.getWheelCount(yControll);
-		
+
 		/******/
-		
+
 	},
 	/**
 	 * 获取滚动计数
@@ -86,7 +85,7 @@ let stepMove = {
 			// console.log("Count：" + wheelCount + ", Count1：" + wheelCount1 + ", deltaY：" + yControll);
 			if(yControll > stepMove.wheelCount || yControll > stepMove.wheelCount - stepMove.wheelCount1 * yControll) {
 				stepMove.wheelCount += (stepMove.wheelCount + yControll) / stepMove.wheelCount1;
-//				console.log(stepMove.wheelCount);
+				//				console.log(stepMove.wheelCount);
 				if(Math.abs(stepMove.wheelCount) > stepMove.decisionCoefficient && stepMove.scrollingFlag === false) {
 					// console.log(wheelCount)
 					// console.log(stepMove.wheelCount + "!");
@@ -118,7 +117,7 @@ let stepMove = {
 		// 算出现在的净向下次数
 		let down = this.downTimes - this.upTimes
 		console.log(down);
-        //console.log(down + " " + this.maxDown + " " + this.maxUp);
+		//console.log(down + " " + this.maxDown + " " + this.maxUp);
 		// 如果这个down比maxDown小，就能继续向下
 		// 如果负down比maxUp小，就能继续向上
 		// 这个是向下滚动                                                                                                                            
@@ -127,7 +126,7 @@ let stepMove = {
 			document.querySelector(stepMove.targetElement).style.transform = "translate" + stepMove.axisDirection.toUpperCase() + "(" + stepMove.changeCount + stepMove.displacementUnit + ")";
 			this.downTimes++;
 			stepMove.getTouchStart(event);
-		} else if(stepMove.touchDirection === "down"  && (-1 * down) < this.maxUp || stepMove.wheelDirection == 'up' && stepMove.targetElement != null && (-1 * down) < this.maxUp) {
+		} else if(stepMove.touchDirection === "down" && (-1 * down) < this.maxUp || stepMove.wheelDirection == 'up' && stepMove.targetElement != null && (-1 * down) < this.maxUp) {
 			stepMove.changeCount = stepMove.changeCount + stepMove.perDisplacement;
 			document.querySelector(stepMove.targetElement).style.transform = "translate" + stepMove.axisDirection.toUpperCase() + "(" + stepMove.changeCount + stepMove.displacementUnit + ")";
 			this.upTimes++;
@@ -138,7 +137,7 @@ let stepMove = {
 		// stepMove.getTouchStart(event);
 		// console.log(stepMove.changeCount);
 		//console.log(stepMove.scrollingFlag);
-		
+
 	},
 	getTouchStart: (event) => {
 		// console.log(event);
@@ -199,9 +198,7 @@ let stepMove = {
 		document.addEventListener('touchstart', stepMove.getTouchStart);
 		document.addEventListener('touchmove', stepMove.getTouchDirection);
 	},
-	
-	
-	
+
 }
 
 let height = window.innerHeight;
@@ -209,75 +206,55 @@ let height = window.innerHeight;
 stepMove.wheelStepByStep("#allpage", 100, "y", 100, "%", 0, 4);
 stepMove.touchStepByStep("#allpage", 100, "y", 100, "%", 0, 4);
 
+document.addEventListener("wheel", function() {
+	
+	if(pagecount.style.transform == "translateY(-100%)" && stepMove.wheelDirection === "down" || pagecount.style.transform == "translateY(-100%)" && stepMove.wheelDirection === "up") {
+		//			console.log("scroll 2 access");
+		$("#pageTwo_head").addClass("bounceInLeft");
+		$("#pageTwo_head").removeClass("bounceOutLeft");
+		document.getElementById("pageTwo_head").style.opacity = 1;
+		$("#pageTwo_center").removeClass("fontOut");
+		$("#pageTwo_center").addClass("fontIn");
+		document.getElementById("pageTwo_center").style.opacity = 1;
 
-document.addEventListener("wheel",function(){
-			let pagecount = document.getElementById("allpage");
+	} else if(pagecount.style.transform == "translateY(-200%)" && stepMove.wheelDirection === "down" || pagecount.style.transform == "translateY(0%)" && stepMove.wheelDirection === "up") {
+		console.log("qwq");
+		$("#pageTwo_head").removeClass("bounceInLeft");
+		$("#pageTwo_head").addClass("bounceOutLeft");
+		document.getElementById("pageTwo_head").style.opacity = 0;
+		$("#pageTwo_center").removeClass("fontIn");
+		$("#pageTwo_center").addClass("fontOut");
+		document.getElementById("pageTwo_center").style.opacity = 0.1;
 
-			if(pagecount.style.transform == "translateY(-100%)" && stepMove.wheelDirection === "down" || pagecount.style.transform == "translateY(-100%)" && stepMove.wheelDirection === "up") {
-//			console.log("scroll 2 access");
-			$("#pageTwo_head").addClass("bounceInLeft");
-			$("#pageTwo_head").removeClass("bounceOutLeft");
-			document.getElementById("pageTwo_head").style.opacity = 1;
-			$("#pageTwo_center").removeClass("fontOut");
-			$("#pageTwo_center").addClass("fontIn");
-			document.getElementById("pageTwo_center").style.opacity = 1;
-
-		}else if(pagecount.style.transform == "translateY(-200%)" && stepMove.wheelDirection === "down" || pagecount.style.transform == "translateY(0%)" && stepMove.wheelDirection === "up"){
-			console.log("qwq");
-			$("#pageTwo_head").removeClass("bounceInLeft");
-			$("#pageTwo_head").addClass("bounceOutLeft");
-			document.getElementById("pageTwo_head").style.opacity = 0;
-			$("#pageTwo_center").removeClass("fontIn");
-			$("#pageTwo_center").addClass("fontOut");
-			document.getElementById("pageTwo_center").style.opacity = 0.1;
-			
-		
-		};
-
-
-
-});
-		
-
-document.addEventListener("touchmove",function(){
-			let pagecount = document.getElementById("allpage");
-
-			if(pagecount.style.transform == "translateY(-100%)" && stepMove.touchDirection === "down" || pagecount.style.transform == "translateY(-100%)" && stepMove.touchDirection === "up") {
-//			console.log("touch 2 access");
-			$("#pageTwo_head").addClass("bounceInLeft");
-			$("#pageTwo_head").removeClass("bounceOutLeft");
-			document.getElementById("pageTwo_head").style.opacity = 1;
-			$("#pageTwo_center").removeClass("fontOut");
-			$("#pageTwo_center").addClass("fontIn");
-			document.getElementById("pageTwo_center").style.opacity = 1;
-
-		}else if(pagecount.style.transform == "translateY(-200%)" && stepMove.touchDirection === "down" || pagecount.style.transform == "translateY(0%)" && stepMove.touchDirection === "up"){
-			console.log("qwq");
-			$("#pageTwo_head").removeClass("bounceInLeft");
-			$("#pageTwo_head").addClass("bounceOutLeft");
-			document.getElementById("pageTwo_head").style.opacity = 0;
-			$("#pageTwo_center").removeClass("fontIn");
-			$("#pageTwo_center").addClass("fontOut");
-			document.getElementById("pageTwo_center").style.opacity = 0.1;
-			
-		
-		};
-
-
+	};
 
 });
 
+document.addEventListener("touchmove", function() {
+	let pagecount = document.getElementById("allpage");
 
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+	if(pagecount.style.transform == "translateY(-100%)" && stepMove.touchDirection === "down" || pagecount.style.transform == "translateY(-100%)" && stepMove.touchDirection === "up") {
+		//			console.log("touch 2 access");
+		$("#pageTwo_head").addClass("bounceInLeft");
+		$("#pageTwo_head").removeClass("bounceOutLeft");
+		document.getElementById("pageTwo_head").style.opacity = 1;
+		$("#pageTwo_center").removeClass("fontOut");
+		$("#pageTwo_center").addClass("fontIn");
+		document.getElementById("pageTwo_center").style.opacity = 1;
+
+	} else if(pagecount.style.transform == "translateY(-200%)" && stepMove.touchDirection === "down" || pagecount.style.transform == "translateY(0%)" && stepMove.touchDirection === "up") {
+		console.log("qwq");
+		$("#pageTwo_head").removeClass("bounceInLeft");
+		$("#pageTwo_head").addClass("bounceOutLeft");
+		document.getElementById("pageTwo_head").style.opacity = 0;
+		$("#pageTwo_center").removeClass("fontIn");
+		$("#pageTwo_center").addClass("fontOut");
+		document.getElementById("pageTwo_center").style.opacity = 0.1;
+
+	};
+
+});
+
 //document.addEventListener("wheel",function(){
 //			let pagecount = document.getElementById("allpage");
 //
@@ -290,8 +267,6 @@ document.addEventListener("touchmove",function(){
 //			document.getElementById("pageTwo_center").style.opacity = 1;
 //
 //		};});
-
-
 
 //stepMove.wheelStepByStep("#allpage", 100, "y", 100, "%", 0, maxPage-1);
 //stepMove.touchStepByStep("#allpage", 100, "y", 100, "%", 0, maxPage-1);
