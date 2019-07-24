@@ -41,7 +41,3 @@ $(function() {
 		},
 	});
 });
-
-function bottomEffect() {
-	$.fn.fullpage.moveSectionDown();
-}

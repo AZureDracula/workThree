@@ -206,8 +206,8 @@ let stepMove = {
 
 let height = window.innerHeight;
 
-stepMove.wheelStepByStep("#allpage", 100, "y", 100, "%", 0, 2);
-stepMove.touchStepByStep("#allpage", 100, "y", 100, "%", 0, 2);
+stepMove.wheelStepByStep("#allpage", 100, "y", 100, "%", 0, 4);
+stepMove.touchStepByStep("#allpage", 100, "y", 100, "%", 0, 4);
 
 
 document.addEventListener("wheel",function(){

@@ -16,3 +16,95 @@ h3 {
 	width: 100vw;
 	height: 100%;
 }
+
+
+
+/*向下箭头动画*/
+
+#bottomArrowPOne {
+	left: 16%;
+}
+
+#bottomArrowPTwo {
+	left: 49.5%;
+}
+
+#bottomArrowPThree {
+	left: 83%;
+}
+
+.bottomArrow {
+	display: inline-block;
+	max-width: 70px;
+	width: 8.3%;
+	z-index: 100;
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	cursor: pointer;
+	animation: bottomMove 2s linear;
+	animation-iteration-count: infinite;
+	/* Safari and Chrome */
+	-webkit-animation: bottomMove 2s linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes bottomMove {
+	0% {
+		top: 85%;
+	}
+	25% {
+		top: 88%;
+	}
+	50% {
+		top: 90%;
+	}
+	75% {
+		top: 87%;
+	}
+	100% {
+		top: 85%;
+	}
+}
+
+@-moz-keyframes bottomMove
+/* Firefox */
+
+{
+	0% {
+		top: 85%;
+	}
+	25% {
+		top: 88%;
+	}
+	50% {
+		top: 90%;
+	}
+	75% {
+		top: 87%;
+	}
+	100% {
+		top: 85%;
+	}
+}
+
+@-webkit-keyframes bottomMove
+/* Safari 和 Chrome */
+
+{
+	0% {
+		top: 85%;
+	}
+	25% {
+		top: 88%;
+	}
+	50% {
+		top: 90%;
+	}
+	75% {
+		top: 87%;
+	}
+	100% {
+		top: 85%;
+	}
+}
