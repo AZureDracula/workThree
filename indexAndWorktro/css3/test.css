@@ -27,6 +27,7 @@
 	position: absolute;
 	display: inline-block;
 	/*background-color: red;*/
+	z-index: 2;
 	height: 71.86vh;
 	width: 115.17vh;
 	top: 18.13vh;
@@ -34,11 +35,12 @@
 	background-image: url(../img3/pageThreeBank.png);
 	background-size: 100% 100%;
 	background-position: center;
-	transform: translate3D(50vh, 10vh, -5px) scale(6);
+	transform: translate3D(50vh, 10vh, -1px) scale(2);
 }
 #pageThreeRock{
 	position: absolute;
 	display: inline-block;
+	z-index: 3;
 	/*background-color: red;*/
 	height: 59.036vh;
 	width: 135.846vh;
@@ -47,5 +49,5 @@
 	background-image: url(../img3/pageThreeRock.png);
 	background-size: 100% 100%;
 	background-position: center;
-	transform: translate3D(60vh, 20vh, -10) scale(11);
+	transform: translate3D(60vh, 20vh, -5px) scale(6);
 }
