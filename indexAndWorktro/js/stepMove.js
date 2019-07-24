@@ -104,7 +104,7 @@ let stepMove = {
 			stepMove.wheelCount1 = stepMove.wheelCount = null;
 		}
 		// stepMove.scrollPage();
-		//console.log(yControll);
+		console.log("yControll"+yControll);
 		// console.log(stepMove.decisionCoefficient ==  stepMove.decisionCoefficient)
 	},
 	/**
@@ -115,7 +115,7 @@ let stepMove = {
 		stepMove.wheelCount1 = stepMove.wheelCount = null;
 		stepMove.touchCount = null;
 		// 算出现在的净向下次数
-		let down = this.downTimes - this.upTimes
+		let down = this.downTimes - this.upTimes;
 		console.log(down);
 		//console.log(down + " " + this.maxDown + " " + this.maxUp);
 		// 如果这个down比maxDown小，就能继续向下
@@ -207,6 +207,7 @@ stepMove.wheelStepByStep("#allpage", 50, "y", 100, "%", 0, 4);
 stepMove.touchStepByStep("#allpage", 50, "y", 100, "%", 0, 4);
 
 document.addEventListener("wheel", function() {
+	let pagecount = document.getElementById("allpage");
 	
 	if(pagecount.style.transform == "translateY(-100%)" && stepMove.wheelDirection === "down" || pagecount.style.transform == "translateY(-100%)" && stepMove.wheelDirection === "up") {
 		//			console.log("scroll 2 access");
