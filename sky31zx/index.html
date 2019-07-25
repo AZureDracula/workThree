@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title></title>
+		<link rel="stylesheet" href="css/bath.css" />
+		<link rel="stylesheet" href="css3/test.css" />
+		<link rel="stylesheet" href="css1/style.css">
+		<link rel="stylesheet" href="css2/pageTwo.css" />
+		<!--		<link rel="stylesheet" href="css2/pageTwo_donghua.css" />-->
+		<link rel="stylesheet" href="css3/pageThree.css" />
+		<link rel="stylesheet" href="css4/pageFour.css" />
+		<style>
+			* {
+				margin: 0px;
+				padding: 0px;
+				font-size: 0px;
+				transition: all 0.8s;
+			}
+			
+			html,
+			body {
+				height: 100%;
+				overflow: hidden;
+				touch-action: none;
+			}
+			
+			#pageOne_first_page {
+				background-color: beige;
+			}
+			
+			@font-face {
+				font-family: 'fanti';
+				src: url('font/fanti.ttf');
+			}
+			
+			@font-face {
+				font-family: 'mini';
+				src: url('font/mini.ttf');
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="allpage" style="transform: translateY(0%);">
+
+			<div class="pageOne_first_page bigPage" id="pageOne_first_page">
+				<img class="bottomArrow" src="img/jiantou.png" onclick="bottomEffectOne()" />
+			</div>
+			<div class="bigPage" id="pageTwo"  style="overflow-x: scroll; overflow-y: hidden; text-align: center;">
+				<div id="pageTwoBox">
+					<div id="pageTwoHead">
+						<div id="pageTwoHeadTitleOne"></div>
+						<div id="pageTwoHeadTitleTwo"></div>
+						<div id="pageTwoHeadTitleThree"></div>
+						<div id="pageTwoHeadLogo"></div>
+					</div>
+					<div id="pageTwoCenterOne">
+						<!--<div id="pageTwoCenterOneLeftBig">-->
+						<div id="pageTwoCenterOneLeft"></div>
+						<!--</div>-->
+						<!--<div id="pageTwoCenterOneRightBig">-->
+						<div id="pageTwoCenterOneRight"></div>
+						<!--</div>-->
+					</div>
+					<div id="pageTwoCenterTwo">
+						<!--<div id="pageTwoCenterTwoLeftBig">-->
+						<div id="pageTwoCenterTwoLeft"></div>
+						<!--</div>-->
+						<!--<div id="pageTwoCenterTwoRightBig">-->
+						<div id="pageTwoCenterTwoRight"></div>
+						<!--</div>-->
+					</div>
+					<div id="pageTwoCenterThree">
+						<!--<div id="pageTwoCenterThreeLeftBig">-->
+						<div id="pageTwoCenterThreeLeft"></div>
+						<!--</div>-->
+						<!--<div id="pageTwoCenterThreeRightBig">-->
+						<div id="pageTwoCenterThreeRight"></div>
+						<!--</div>-->
+					</div>
+					<img class="bottomArrow" src="img/jiantou.png" onclick="bottomEffectTwo()" />
+				</div>
+			</div>
+			<div class="bigPage" id="pageThree">
+				<img class="bottomArrow" src="img/jiantou.png" onclick="bottomEffectTwo()" />
+			</div>
+			<div class="bigPage" id="pageFour">
+				<div id="pageFourChoose">
+					<div id="pageFourChooseDemo">
+						<div id="pageFourChooseBigBox">
+							<div class="pageFourChooseBox" id="pageFourChooseBoxOne" onclick="pageFourChooseBoxOne()">pageFourChooseBoxOne</div>
+							<div class="pageFourChooseBox" id="pageFourChooseBoxTwo" onclick="pageFourChooseBoxTwo()">pageFourChooseBoxTwo</div>
+							<div class="pageFourChooseBox" id="pageFourChooseBoxThree" onclick="pageFourChooseBoxThree()">pageFourChooseBoxThree</div>
+							<div class="pageFourChooseBox" id="pageFourChooseBoxFour" onclick="pageFourChooseBoxFour()">pageFourChooseBoxFour</div>
+							<div class="pageFourChooseBox" id="pageFourChooseBoxFive" onclick="pageFourChooseBoxFive()">pageFourChooseBoxFive</div>
+							<div class="pageFourChooseBox" id="pageFourChooseBoxSix" onclick="pageFourChooseBoxSix()">pageFourChooseBoxSix</div>
+							<div class="pageFourChooseBox" id="pageFourChooseBoxSeven" onclick="pageFourChooseBoxSeven()">pageFourChooseBoxSeven</div>
+							<div class="pageFourChooseBox" id="pageFourChooseBoxEight" onclick="pageFourChooseBoxEight()">pageFourChooseBoxEight</div>
+							<div class="pageFourChooseBox" id="pageFourChooseBoxNine" onclick="pageFourChooseBoxNine()">pageFourChooseBoxNine</div>
+						</div>
+					</div>
+				</div>
+				<div id="pageFourFontBigBox">
+					<div class="pageFourFontBox pageFourFontBoxOn" id="pageFourFontBoxOne">pageFourFontBoxOne</div>
+					<div class="pageFourFontBox pageFourFontBoxOff" id="pageFourFontBoxTwo">pageFourFontBoxTwo</div>
+					<div class="pageFourFontBox pageFourFontBoxOff" id="pageFourFontBoxThree">pageFourFontBoxThree</div>
+					<div class="pageFourFontBox pageFourFontBoxOff" id="pageFourFontBoxFour">pageFourFontBoxFour</div>
+					<div class="pageFourFontBox pageFourFontBoxOff" id="pageFourFontBoxFive">pageFourFontBoxFive</div>
+					<div class="pageFourFontBox pageFourFontBoxOff" id="pageFourFontBoxSix">pageFourFontBoxSix</div>
+					<div class="pageFourFontBox pageFourFontBoxOff" id="pageFourFontBoxSeven">pageFourFontBoxSeven</div>
+					<div class="pageFourFontBox pageFourFontBoxOff" id="pageFourFontBoxEight">pageFourFontBoxEight</div>
+					<div class="pageFourFontBox pageFourFontBoxOff" id="pageFourFontBoxNine">pageFourFontBoxNine</div>
+				</div>
+				<img class="bottomArrow" src="img/jiantou.png" onclick="bottomEffectTwo()" />
+			</div>
+			<div class="bigPage" id="pageFive">
+				<h1 style="font-size: 100px;">卤呐鸭好可爱~~</h1>
+				<img class="bottomArrow" src="img/jiant.png" onclick="bottomEffectFive()" />
+			</div>
+
+		</div>
+
+		<script type="text/javascript" src="js/stepMove.js"></script>
+		<!--<script type="text/javascript" src="js/bath.js" ></script>-->
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js2/pageTwo_setting.js"></script>
+		<script type="text/javascript" src="js4/testFour.js"></script>
+	</body>
+
+</html>
