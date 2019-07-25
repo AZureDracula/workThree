@@ -4,3 +4,85 @@
 	padding: 0;
 	background-color:  #B9B9B9;
 }
+#pageFourChoose{
+	position: relative;
+	width: 100%;
+	height: 25.6vh;
+	top: 16.14583vh;
+	left: 0px;
+	overflow: hidden;
+	/*background-color: #29910D;*/
+	padding-bottom: 0px;
+}
+#pageFourChooseDemo{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: 0vh;
+	left: 0px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	padding-bottom: 30px;
+}
+
+#pageFourChooseBigBox{
+	position: relative;
+	font-size: 20px;
+	width: 319vh;
+	height: 100%;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	background-color: aquamarine;
+	padding-bottom: 0px;
+}
+
+.pageFourChooseBox{
+	display: inline-block;
+	position: relative;
+	float: left;
+	background-color: red;
+	font-size: 20px;
+	width: 25vh;
+	margin-left: 8vh;
+	height: 100%;
+
+}
+#pageFourChooseBoxOne{
+	display: inline-block;
+	position: relative;
+	float: left;
+	background-color: red;
+	font-size: 20px;
+	width: 25vh;
+	margin-left: 15vh;
+	height: 100%;
+}
+#pageFourChooseBoxNine{
+	display: inline-block;
+	position: relative;
+	float: left;
+	background-color: red;
+	font-size: 20px;
+	width: 25vh;
+	margin-right: 15vh;
+	height: 100%;
+}
+
+#pageFourFontBigBox{
+	position: relative;
+	top: 20.64vh;
+	width: 100%;
+	height: 36vh;
+	background-color: burlywood;
+}
+
+.pageFourFontBox{
+	display: inline-block;
+	width: 61.111%;
+	height: 100%;
+	position: absolute;
+	left: 19.444%;
+	background-color: aquamarine;
+	font-size: 20px;
+}

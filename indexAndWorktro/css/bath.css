@@ -39,7 +39,7 @@ h3 {
 	width: 8.3%;
 	z-index: 100;
 	position: absolute;
-	top: 85%;
+	top: 88%;
 	left: 50%;
 	cursor: pointer;
 	animation: bottomMove 2s linear;
@@ -51,19 +51,19 @@ h3 {
 
 @keyframes bottomMove {
 	0% {
-		top: 85%;
-	}
-	25% {
 		top: 88%;
 	}
-	50% {
+	25% {
 		top: 90%;
 	}
+	50% {
+		top: 93%;
+	}
 	75% {
-		top: 87%;
+		top: 91%;
 	}
 	100% {
-		top: 85%;
+		top: 88%;
 	}
 }
 
@@ -72,20 +72,20 @@ h3 {
 
 {
 	0% {
-		top: 85%;
-	}
-	25% {
 		top: 88%;
 	}
-	50% {
+	25% {
 		top: 90%;
 	}
+	50% {
+		top: 93%;
+	}
 	75% {
-		top: 87%;
+		top: 91%;
 	}
 	100% {
-		top: 85%;
-	}
+		top: 88%;
+	}	
 }
 
 @-webkit-keyframes bottomMove
@@ -93,18 +93,18 @@ h3 {
 
 {
 	0% {
-		top: 85%;
-	}
-	25% {
 		top: 88%;
 	}
-	50% {
+	25% {
 		top: 90%;
 	}
+	50% {
+		top: 93%;
+	}
 	75% {
-		top: 87%;
+		top: 91%;
 	}
 	100% {
-		top: 85%;
+		top: 88%;
 	}
 }
