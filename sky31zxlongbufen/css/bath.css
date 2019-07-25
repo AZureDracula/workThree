@@ -19,26 +19,13 @@ h3 {
 
 
 
-/*向下箭头动画*/
-
-#bottomArrowPOne {
-	left: 16%;
-}
-
-#bottomArrowPTwo {
-	left: 49.5%;
-}
-
-#bottomArrowPThree {
-	left: 83%;
-}
 
 .bottomArrow {
 	display: inline-block;
+	position: fixed;
 	max-width: 70px;
 	width: 8.3%;
 	z-index: 100;
-	position: absolute;
 	top: 88%;
 	left: 50%;
 	cursor: pointer;
@@ -49,6 +36,7 @@ h3 {
 	-webkit-animation-iteration-count: infinite;
 }
 
+/*向下箭头动画*/
 @keyframes bottomMove {
 	0% {
 		top: 88%;

@@ -1,0 +1,239 @@
+
+html, body{
+    height: 100%;
+}
+
+*{
+    font-size: 0;
+    padding:0;
+    margin: 0;
+}
+/*
+img {
+	璐老板你有毒毒
+	pointer-events: none;
+	璐老板你有毒毒
+}*/
+
+.first_page{
+    height: 100%;
+    width:100%;
+    display: inline-block;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+#first_page_bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow-x: hidden;
+}
+
+#first_sky{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    z-index: -5;
+}
+
+#first_sea_mount{
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+
+#first_ship{
+    width: 26%;
+    position: absolute;
+    top: 65.7%;
+    left: 54%;
+    z-index: 2;
+}
+
+#first_front_mount{
+    width: 68%;
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+}
+
+#first_cloud_left{
+    position: absolute;
+    width: 75%;
+    right: -2%;
+    top: 22.35%;
+    z-index: -1;
+    animation: first_cloud_left 2s linear infinite;
+}
+@keyframes first_cloud_left {
+    0%{right: -2%;}
+    50%{right: 0;}
+    100%{right: -2%;}
+
+}
+
+#first_cloud_right{
+    position: absolute;
+    width: 30%;
+    top: 9%;
+    left: -2%;
+    animation: first_cloud_right 3s linear infinite;
+}
+@keyframes first_cloud_right {
+    0%{left: -2%;}
+    50%{left: 0;}
+    100%{left: -2%;}
+
+}
+
+#first_cloud_right_2{
+    position: absolute;
+    width: 33.6%;
+    top: 3.5%;
+    left: 57%;
+    z-index: -1;
+    animation: first_cloud_right_2 2.5s linear infinite;
+}
+@keyframes first_cloud_right_2 {
+    0%{left: 57%;}
+    50%{left: 59%;}
+    100%{left: 57%;}
+
+}
+
+#first_wave_1{
+    position: absolute;
+    width: 54.5%;
+    left: 44.5%;
+    top: 68%;
+    animation: first_wave_1 3s linear infinite;
+}
+@keyframes first_wave_1{
+    0%{left: 44.5%;}
+    50%{left: 42.5%;}
+    100%{left: 44.5%;}
+}
+
+#first_wave_2{
+    position: absolute;
+    width: 54.5%;
+    left: 42.5%;
+    top: 68%;
+    animation: first_wave_2 2.5s linear infinite;
+}
+@keyframes first_wave_2{
+    0%{left: 42.5%;}
+    50%{left: 44.5%;}
+    100%{left: 42.5%;}
+}
+
+#first_big_title{
+    width: 46%;
+    position: absolute;
+    top: 5%;
+    left: 8%;
+    z-index: 6;
+}
+
+#first_LOGO{
+    position: absolute;
+    width: 14.6%;
+    height: 8%;
+    left: 54%;
+    top: 3%;
+    z-index: 6;
+}
+
+#first_font{
+    position: absolute;
+    width: 80%;
+    top: 18.3%;
+    right: 6.6%;
+}
+
+.first_page_button{
+    width: 120px;
+    position: absolute;
+    z-index: 6;
+    right: 2%;
+    height: 50px;
+}
+#first_page_button_1{
+    top: 81.5%;
+}
+#first_page_button_2{
+    top: 89%;
+}
+
+#first_button{
+    width: 100%;
+    position: absolute;
+}
+
+.first_page_button>p{
+    width: 100%;
+    font-size: 20px;
+    line-height: 47px;
+    position: absolute;
+    text-align: center;
+    color: aliceblue;
+}
+
+/* 不同手机屏幕不同的自适应. */
+
+/* 更长的手机 */
+@media screen and (min-height:820px){
+    #first_cloud_left{
+        top: 30%;
+    }
+
+    #first_cloud_right{
+        top: 18%;
+    }
+
+    #first_cloud_right_2{
+        top: 8%;
+    }
+    #first_wave_1{
+        top: 72%;
+    }
+    #first_wave_2{
+        top: 71%;
+    }
+}
+
+/* 长的手机 */
+@media screen and (min-height:810px) and (max-height:819px){
+        
+    #first_ship{
+        top: 68.7%;
+    }
+    #first_cloud_left{
+        top: 35%;
+    }
+
+    #first_cloud_right{
+        top: 23%;
+    }
+
+    #first_cloud_right_2{
+        top: 11%;
+    }
+
+    #first_wave_1{
+        top: 73%;
+    }
+
+    #first_wave_2{
+        top: 72%;
+    }
+    
+    #first_big_title{
+        top: 10%;
+    }
+
+    #first_LOGO{
+        top: 8%;
+    }
+}

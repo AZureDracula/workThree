@@ -4,14 +4,12 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
 		<title></title>
 		<link rel="stylesheet" href="css/bath.css" />
-		<link rel="stylesheet" href="css3/test.css" />
-		<link rel="stylesheet" href="css1/style.css">
+		<link rel="stylesheet" href="css1/first.css">
 		<link rel="stylesheet" href="css2/pageTwo.css" />
-		<!--		<link rel="stylesheet" href="css2/pageTwo_donghua.css" />-->
+		<link rel="stylesheet" href="css2/pageTwo_donghua.css" />
 		<link rel="stylesheet" href="css3/pageThree.css" />
 		<link rel="stylesheet" href="css4/pageFour.css" />
 		<style>
@@ -30,28 +28,43 @@
 			}
 			
 			#pageOne_first_page {
-				background-color: beige;
+				/*background-color: beige;*/
 			}
 			
-			@font-face {
-				font-family: 'fanti';
-				src: url('font/fanti.ttf');
-			}
-			
-			@font-face {
-				font-family: 'mini';
-				src: url('font/mini.ttf');
-			}
 		</style>
 	</head>
 
 	<body>
+		<img class="bottomArrow" src="img/jiantou.png" onclick="bottomEffect()" />	
 		<div id="allpage" style="transform: translateY(0%);">
 
-			<div class="pageOne_first_page bigPage" id="pageOne_first_page">
-				<img class="bottomArrow" src="img/jiantou.png" onclick="bottomEffectOne()" />
+			<div class="first_page" id="first_page">
+				<div id="first_page_bg">
+					<img onclick="return false;"  src="first_img/sky.png"  id="first_sky">
+					<img onclick="return false;" src="first_img/sea_mount.png" id="first_sea_mount">
+					<img onclick="return false;" src="first_img/ship.png" id="first_ship">
+					<img onclick="return false;" src="first_img/front_mount.png" id="first_front_mount">
+					<img onclick="return false;" src="first_img/cloud_left.png" id="first_cloud_left">
+					<img onclick="return false;" src="first_img/cloud_right.png" id="first_cloud_right">
+					<img onclick="return false;" src="first_img/cloud_right_2.png" id="first_cloud_right_2">
+					<img onclick="return false;" src="first_img/wave_1.png" id="first_wave_1">
+					<img onclick="return false;" src="first_img/wave_2.png" id="first_wave_2">
+					<img onclick="return false;" src="first_img/big_title.png" id="first_big_title">
+					<img onclick="return false;" src="first_img/LOGO.png" id="first_LOGO">
+					<img onclick="return false;" src="first_img/font.png" id="first_font">
+					<div class="first_page_button" id="first_page_button_1">
+						<img onclick="return false;" src="first_img/button.png" id="first_button">
+						<p>翼部门</p>
+					</div>
+					<div class="first_page_button" id="first_page_button_2">
+						<img onclick="return false;" src="first_img/button.png" id="first_button">
+						<p>录取查询</p>
+					</div>
+				</div>
+
+
 			</div>
-			<div class="bigPage" id="pageTwo"  style="overflow-x: scroll; overflow-y: hidden; text-align: center;">
+			<div class="bigPage" id="pageTwo" style=" text-align: center;">
 				<div id="pageTwoBox">
 					<div id="pageTwoHead">
 						<div id="pageTwoHeadTitleOne"></div>
@@ -83,11 +96,13 @@
 						<div id="pageTwoCenterThreeRight"></div>
 						<!--</div>-->
 					</div>
-					<img class="bottomArrow" src="img/jiantou.png" onclick="bottomEffectTwo()" />
+
 				</div>
+
+
 			</div>
 			<div class="bigPage" id="pageThree">
-				<img class="bottomArrow" src="img/jiantou.png" onclick="bottomEffectTwo()" />
+
 			</div>
 			<div class="bigPage" id="pageFour">
 				<div id="pageFourChoose">
@@ -116,19 +131,19 @@
 					<div class="pageFourFontBox pageFourFontBoxOff" id="pageFourFontBoxEight">pageFourFontBoxEight</div>
 					<div class="pageFourFontBox pageFourFontBoxOff" id="pageFourFontBoxNine">pageFourFontBoxNine</div>
 				</div>
-				<img class="bottomArrow" src="img/jiantou.png" onclick="bottomEffectTwo()" />
+
 			</div>
 			<div class="bigPage" id="pageFive">
-				<h1 style="font-size: 100px;">卤呐鸭好可爱~~</h1>
-				<img class="bottomArrow" src="img/jiant.png" onclick="bottomEffectFive()" />
+
+
 			</div>
 
 		</div>
-
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 		<script type="text/javascript" src="js/stepMove.js"></script>
 		<!--<script type="text/javascript" src="js/bath.js" ></script>-->
-		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-		<script type="text/javascript" src="js2/pageTwo_setting.js"></script>
+
+		<!--<script type="text/javascript" src="js2/pageTwo_setting.js"></script>-->
 		<script type="text/javascript" src="js4/testFour.js"></script>
 	</body>
 

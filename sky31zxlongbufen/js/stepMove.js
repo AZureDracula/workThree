@@ -122,7 +122,7 @@ let stepMove = {
 	 * 滚动指定元素
 	 */
 	scrollPage: function(event) {
-		console.log("动了，龙龙你个弟弟");
+//		console.log("动了，龙龙你个弟弟");
 		//		console.log("  stepMove.scrollingFlag  " +stepMove.scrollingFlag);
 		//		console.log("  stepMove.wheelCount1  " +stepMove.wheelCount1);
 		//		console.log("  stepMove.wheelCount  " +stepMove.wheelCount);
@@ -241,99 +241,161 @@ let stepMove = {
 	},
 
 }
+/**************************/
+
+/*     上面封装完成                */
+
+/******************************/
 
 let height = window.innerHeight;
-
 stepMove.wheelStepByStep("#allpage", 50, "y", 100, "%", 0, 4);
 stepMove.touchStepByStep("#allpage", 50, "y", 100, "%", 0, 4);
+
+/***        滚轮特殊位置触发效果                      ***/
 
 document.addEventListener("wheel", function() {
 	let pagecount = document.getElementById("allpage");
 
-	if(pagecount.style.transform == "translateY(-100%)" && stepMove.wheelDirection === "down" || pagecount.style.transform == "translateY(-100%)" && stepMove.wheelDirection === "up") {
-					console.log("scroll 2 access");
-//		$("#pageTwo_head").addClass("bounceInLeft");
-//		$("#pageTwo_head").removeClass("bounceOutLeft");
-//		document.getElementById("pageTwo_head").style.opacity = 1;
-//		$("#pageTwo_center").removeClass("fontOut");
-//		$("#pageTwo_center").addClass("fontIn");
-//		document.getElementById("pageTwo_center").style.opacity = 1;
+	if(pagecount.style.transform == "translateY(-100%)") {
 
-	} else if(pagecount.style.transform == "translateY(-200%)" && stepMove.wheelDirection === "down" || pagecount.style.transform == "translateY(0%)" && stepMove.wheelDirection === "up") {
-				console.log("qwq");
-//		$("#pageTwo_head").removeClass("bounceInLeft");
-//		$("#pageTwo_head").addClass("bounceOutLeft");
-//		document.getElementById("pageTwo_head").style.opacity = 0;
-//		$("#pageTwo_center").removeClass("fontIn");
-//		$("#pageTwo_center").addClass("fontOut");
-//		document.getElementById("pageTwo_center").style.opacity = 0.1;
+//		$("#pageTwoCenterTwoLeft").addClass("bounceInLeft");
+//		$("#pageTwoCenterTwoLeft").removeClass("bounceOutLeft");
+//		$("#pageTwoCenterOneRight").addClass("bounceInRight");
+//		$("#pageTwoCenterOneRight").removeClass("bounceOutRight");
+//		$("#pageTwoCenterThreeRight").addClass("bounceInRight");
+//		$("#pageTwoCenterThreeRight").removeClass("bounceOutRight");
+		
+		$("#pageTwoCenterTwoLeft").addClass("bounceInLeft");
+		$("#pageTwoCenterTwoLeft").removeClass("bounceOutLeft");
+		$("#pageTwoCenterOneRight").addClass("bounceInRightOne");
+		$("#pageTwoCenterOneRight").removeClass("bounceOutRightOne");
+		$("#pageTwoCenterThreeRight").addClass("bounceInRightTwo");
+		$("#pageTwoCenterThreeRight").removeClass("bounceOutRightTwo");
+		
+
+		//		console.log("scroll 2 access");
+
+	} else if(pagecount.style.transform == "translateY(-200%)" || pagecount.style.transform == "translateY(0%)") {
+
+//		$("#pageTwoCenterTwoLeft").removeClass("bounceInLeft");
+//		$("#pageTwoCenterTwoLeft").addClass("bounceOutLeft");
+//		$("#pageTwoCenterOneRight").removeClass("bounceInRight");
+//		$("#pageTwoCenterOneRight").addClass("bounceOutRight");
+//		$("#pageTwoCenterThreeRight").removeClass("bounceInRight");
+//		$("#pageTwoCenterThreeRight").addClass("bounceOutRight");
+		
+		
+		
+		$("#pageTwoCenterTwoLeft").removeClass("bounceInLeft");
+		$("#pageTwoCenterTwoLeft").addClass("bounceOutLeft");
+		$("#pageTwoCenterOneRight").removeClass("bounceInRightOne");
+		$("#pageTwoCenterOneRight").addClass("bounceOutRightOne");
+		$("#pageTwoCenterThreeRight").removeClass("bounceInRightTwo");
+		$("#pageTwoCenterThreeRight").addClass("bounceOutRightTwo");
+		
+		//      console.log("qwq1");
 
 	};
 
 });
+
+/***        触屏特殊位置触发效果                      ***/
 
 document.addEventListener("touchmove", function() {
 	let pagecount = document.getElementById("allpage");
 
-	if(pagecount.style.transform == "translateY(-100%)" && stepMove.touchDirection === "down" || pagecount.style.transform == "translateY(-100%)" && stepMove.touchDirection === "up") {
-					console.log("touch 2 access");
-//		$("#pageTwo_head").addClass("bounceInLeft");
-//		$("#pageTwo_head").removeClass("bounceOutLeft");
-//		document.getElementById("pageTwo_head").style.opacity = 1;
-//		$("#pageTwo_center").removeClass("fontOut");
-//		$("#pageTwo_center").addClass("fontIn");
-//		document.getElementById("pageTwo_center").style.opacity = 1;
+	if(pagecount.style.transform == "translateY(-100%)") {
+		$("#pageTwoCenterTwoLeft").addClass("bounceInLeft");
+		$("#pageTwoCenterTwoLeft").removeClass("bounceOutLeft");
 
-	} else if(pagecount.style.transform == "translateY(-200%)" && stepMove.touchDirection === "down" || pagecount.style.transform == "translateY(0%)" && stepMove.touchDirection === "up") {
-				console.log("qwq2");
-//		$("#pageTwo_head").removeClass("bounceInLeft");
-//		$("#pageTwo_head").addClass("bounceOutLeft");
-//		document.getElementById("pageTwo_head").style.opacity = 0;
-//		$("#pageTwo_center").removeClass("fontIn");
-//		$("#pageTwo_center").addClass("fontOut");
-//		document.getElementById("pageTwo_center").style.opacity = 0.1;
+		//		document.getElementById("pageTwo_head").style.opacity = 1;
+		//		$("#pageTwo_center").removeClass("fontOut");
+		//		$("#pageTwo_center").addClass("fontIn");
+		//		document.getElementById("pageTwo_center").style.opacity = 1;
 
+		//		console.log("touch 2 access");
+
+	} else if(pagecount.style.transform == "translateY(-200%)" || pagecount.style.transform == "translateY(0%)") {
+
+		$("#pageTwoCenterTwoLeft").removeClass("bounceInLeft");
+		$("#pageTwoCenterTwoLeft").addClass("bounceOutLeft");
+
+		//		document.getElementById("pageTwo_head").style.opacity = 0;
+		//		$("#pageTwo_center").removeClass("fontIn");
+		//		$("#pageTwo_center").addClass("fontOut");
+		//		document.getElementById("pageTwo_center").style.opacity = 0.1;
+
+		//		console.log("qwq2");
 	};
 
 });
 
-/*****************************/
+/*****************************************/
 
-function bottomEffectOne() {
+/***        箭头特殊位置触发效果                      ***/
 
-//	$("#pageTwo_head").addClass("bounceInLeft");
-//	$("#pageTwo_head").removeClass("bounceOutLeft");
-//	document.getElementById("pageTwo_head").style.opacity = 1;
-//	$("#pageTwo_center").removeClass("fontOut");
-//	$("#pageTwo_center").addClass("fontIn");
-//	document.getElementById("pageTwo_center").style.opacity = 1;
+/*****************************************/
 
-	/********************/
-	stepMove.touchDirection = "up";
-	stepMove.scrollPage();
-	/*******************/
 
-}
+function bottomEffect() {
+	let pagecount = document.getElementById("allpage");
 
-function bottomEffectTwo() {
+	if(pagecount.style.transform == "translateY(0%)") {
 
-//	$("#pageTwo_head").removeClass("bounceInLeft");
-//	$("#pageTwo_head").addClass("bounceOutLeft");
-//	document.getElementById("pageTwo_head").style.opacity = 0;
-//	$("#pageTwo_center").removeClass("fontIn");
-//	$("#pageTwo_center").addClass("fontOut");
-//	document.getElementById("pageTwo_center").style.opacity = 0.1;
+		$("#pageTwoCenterTwoLeft").addClass("bounceInLeft");
+		$("#pageTwoCenterTwoLeft").removeClass("bounceOutLeft");
+
+		//		console.log("调用第一页箭头");
+
+	} else if(pagecount.style.transform == "translateY(-100%)") {
+		
+		
+		$("#pageTwoCenterTwoLeft").removeClass("bounceInLeft");
+		$("#pageTwoCenterTwoLeft").addClass("bounceOutLeft");
+	};
+
 
 	/********************/
 	stepMove.touchDirection = "up";
 	stepMove.scrollPage();
 	/*******************/
 
-}
+};
 
-function bottomEffectFive() {
-	alert("下面什么都没有了");
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************************************************************************************/
 //document.addEventListener("wheel",function(){
 //			let pagecount = document.getElementById("allpage");
 //
