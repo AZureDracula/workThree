@@ -1,3 +1,84 @@
+
+
+
+
+
+
+
+
+
+
+/****         浪花                   *****/
+
+
+
+@-webkit-keyframes pageTwoLang {
+	0%,
+	100%,
+	60%,
+	75%,
+	90% {
+		-webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+		transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+	}
+	0% {
+		opacity: 0.9;
+		background-size: 100% 100%;
+		-webkit-transform: translate3d(0px, 0px, 0px);
+		transform: translate3d(0px, 0px, 0px)
+	}
+	
+	100% {
+		opacity: 0.2;
+		background-size: 120% 120%;
+		-webkit-transform: translate3d(3vh, -4vh, 0);
+		transform: translate3d(3vh, -4vh, 0)
+	}
+}
+
+@keyframes pageTwoLang {
+	0%,
+	100%,
+	60%,
+	75%,
+	90% {
+		-webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+		transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+	}
+	0% {
+		opacity: 0.9;
+		background-size: 100% 100%;
+		-webkit-transform: translate3d(0px, 0px, 0px);
+		transform: translate3d(0px, 0px, 0px)
+	}
+	
+	100% {
+		opacity: 0.2;
+		background-size: 120% 120%;
+		-webkit-transform: translate3d(3vh, -4vh, 0);
+		transform: translate3d(3vh, -4vh, 0)
+	}
+}
+
+
+
+#pageTwolang {
+	-webkit-animation: pageTwoLang 4s;
+	animation: pageTwoLang 4s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
 /***     从右边弹出来                       ***/
 
 
