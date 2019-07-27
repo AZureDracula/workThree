@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="css/star.css" />
 		<link rel="stylesheet" href="css3/pageThree.css" />
 		<link rel="stylesheet" href="css4/pageFour.css" />
+		<link rel="stylesheet" href="css5/pageFive.css" />
 
 		<style>
 			* {
@@ -29,6 +30,10 @@
 				touch-action: none;
 			}
 			
+			h1 {
+				font-size: 100px;
+			}
+			
 			#pageOne_first_page {
 				/*background-color: beige;*/
 			}
@@ -37,9 +42,9 @@
 
 	<body>
 		<img class="bottomArrow" src="img/jiantou.png" onclick="bottomEffect()" />
-		<div id="allpage" style="transform: translateY(0%);">
+		<div id="allpage" style="transform:  translateY(0%);">
 
-			<div class="first_page" id="first_page">
+			<div class="bigPage first_page" id="first_page">
 				<div id="first_page_bg">
 					<img onclick="return false;" src="first_img/sky.png" id="first_sky">
 					<img onclick="return false;" src="first_img/sea_mount.png" id="first_sea_mount">
@@ -48,6 +53,7 @@
 					<img onclick="return false;" src="first_img/cloud_left.png" id="first_cloud_left">
 					<img onclick="return false;" src="first_img/cloud_right.png" id="first_cloud_right">
 					<img onclick="return false;" src="first_img/cloud_right_2.png" id="first_cloud_right_2">
+					<img onclick="return false;" src="first_img/cloud_right_2.png" id="first_cloud_right_2_1">
 					<img onclick="return false;" src="first_img/wave_1.png" id="first_wave_1">
 					<img onclick="return false;" src="first_img/wave_2.png" id="first_wave_2">
 					<img onclick="return false;" src="first_img/big_title.png" id="first_big_title">
@@ -62,7 +68,20 @@
 						<p>录取查询</p>
 					</div>
 				</div>
-
+				<!--            以下是流星                                    -->
+					<div class="meteor-body">
+						<div class="main-con">
+							<div class="shooting_star"></div>
+							<div class="shooting_star"></div>
+							<div class="shooting_star"></div>
+							<div class="shooting_star"></div>
+							<div class="shooting_star"></div>
+							<div class="shooting_star"></div>
+							<div class="shooting_star"></div>
+						</div>
+					</div>
+				<!--            以上是流星                                    -->
+					
 			</div>
 			<div class="bigPage" id="pageTwo" style=" text-align: center;">
 				<div id="pageTwoBox">
@@ -143,16 +162,42 @@
 
 			</div>
 			<div class="bigPage" id="pageFive">
-
+				<div class="pageFour" id="pageFive_2">
+					<div style="position: relative; height: 100%; overflow: hidden; width: 165vh">
+						<img src="img5/sea_night.png" id="Four_sea_night" />
+					</div>
+					<!--占位-->
+					<div style="top: 0; position: absolute; overflow: hidden; height: 100%; width: 165vh">
+						<!--视口-->
+						<div class="pageFour_box">
+							<!--视差元素-->
+							<div class="p">
+								<p>行政管理中心</p>
+							</div>
+							<img src="img5/light.png" id="Four_light" onclick="return false" />
+							<img src="img5/moon.png" id="Four_moon" onclick="return false" />
+							<img src="img5/ship.png" id="Four_ship" onclick="return false" />
+							<img src="img5/stone.png" id="Four_stone" onclick="return false" />
+							<img src="img5/wave.png" id="Four_wave" onclick="return false" />
+							<img src="img5/dolphin.png" id="Four_dolphin" onclick="return false" />
+						</div>
+					</div>
+				</div>
 			</div>
+			<div class="bigPage" id="pageSix">
+				<h1>6</h1></div>
+			<div class="bigPage" id="pageSeven">
+				<h1>7</h1></div>
+			<div class="bigPage" id="pageEight">
+				<h1>8</h1></div>
+			<div class="bigPage" id="pageNine">
+				<h1>9</h1></div>
 
 		</div>
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 		<script type="text/javascript" src="js/stepMove.js"></script>
-		<!--<script type="text/javascript" src="js/bath.js" ></script>-->
-
-		<!--<script type="text/javascript" src="js2/pageTwo_setting.js"></script>-->
 		<script type="text/javascript" src="js4/testFour.js"></script>
+		<script type="text/javascript" src="js5/pageFive.js" ></script>
 	</body>
 
 </html>

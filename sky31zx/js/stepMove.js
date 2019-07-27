@@ -248,8 +248,8 @@ let stepMove = {
 /******************************/
 
 let height = window.innerHeight;
-stepMove.wheelStepByStep("#allpage", 50, "y", 100, "%", 0, 4);
-stepMove.touchStepByStep("#allpage", 50, "y", 100, "%", 0, 4);
+stepMove.wheelStepByStep("#allpage", 50, "y", 100, "%", 0, 8);
+stepMove.touchStepByStep("#allpage", 50, "y", 100, "%", 0, 8);
 
 /***        滚轮特殊位置触发效果                      ***/
 
@@ -304,7 +304,10 @@ document.addEventListener("touchmove", function() {
 	if(pagecount.style.transform == "translateY(-100%)") {
 		$("#pageTwoCenterTwoLeft").addClass("bounceInLeft");
 		$("#pageTwoCenterTwoLeft").removeClass("bounceOutLeft");
-
+		$("#pageTwoCenterOneRight").addClass("bounceInRightOne");
+		$("#pageTwoCenterOneRight").removeClass("bounceOutRightOne");
+		$("#pageTwoCenterThreeRight").addClass("bounceInRightTwo");
+		$("#pageTwoCenterThreeRight").removeClass("bounceOutRightTwo");
 		//		document.getElementById("pageTwo_head").style.opacity = 1;
 		//		$("#pageTwo_center").removeClass("fontOut");
 		//		$("#pageTwo_center").addClass("fontIn");
@@ -316,7 +319,10 @@ document.addEventListener("touchmove", function() {
 
 		$("#pageTwoCenterTwoLeft").removeClass("bounceInLeft");
 		$("#pageTwoCenterTwoLeft").addClass("bounceOutLeft");
-
+		$("#pageTwoCenterOneRight").removeClass("bounceInRightOne");
+		$("#pageTwoCenterOneRight").addClass("bounceOutRightOne");
+		$("#pageTwoCenterThreeRight").removeClass("bounceInRightTwo");
+		$("#pageTwoCenterThreeRight").addClass("bounceOutRightTwo");
 		//		document.getElementById("pageTwo_head").style.opacity = 0;
 		//		$("#pageTwo_center").removeClass("fontIn");
 		//		$("#pageTwo_center").addClass("fontOut");
@@ -340,13 +346,20 @@ function bottomEffect() {
 
 		$("#pageTwoCenterTwoLeft").addClass("bounceInLeft");
 		$("#pageTwoCenterTwoLeft").removeClass("bounceOutLeft");
-
+		$("#pageTwoCenterOneRight").addClass("bounceInRightOne");
+		$("#pageTwoCenterOneRight").removeClass("bounceOutRightOne");
+		$("#pageTwoCenterThreeRight").addClass("bounceInRightTwo");
+		$("#pageTwoCenterThreeRight").removeClass("bounceOutRightTwo");
 		//		console.log("调用第一页箭头");
 
 	} else if(pagecount.style.transform == "translateY(-100%)") {
 
 		$("#pageTwoCenterTwoLeft").removeClass("bounceInLeft");
 		$("#pageTwoCenterTwoLeft").addClass("bounceOutLeft");
+		$("#pageTwoCenterOneRight").removeClass("bounceInRightOne");
+		$("#pageTwoCenterOneRight").addClass("bounceOutRightOne");
+		$("#pageTwoCenterThreeRight").removeClass("bounceInRightTwo");
+		$("#pageTwoCenterThreeRight").addClass("bounceOutRightTwo");
 	};
 
 	/********************/

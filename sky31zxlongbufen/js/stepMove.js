@@ -122,7 +122,7 @@ let stepMove = {
 	 * 滚动指定元素
 	 */
 	scrollPage: function(event) {
-//		console.log("动了，龙龙你个弟弟");
+		//		console.log("动了，龙你个弟弟");
 		//		console.log("  stepMove.scrollingFlag  " +stepMove.scrollingFlag);
 		//		console.log("  stepMove.wheelCount1  " +stepMove.wheelCount1);
 		//		console.log("  stepMove.wheelCount  " +stepMove.wheelCount);
@@ -248,8 +248,8 @@ let stepMove = {
 /******************************/
 
 let height = window.innerHeight;
-stepMove.wheelStepByStep("#allpage", 50, "y", 100, "%", 0, 4);
-stepMove.touchStepByStep("#allpage", 50, "y", 100, "%", 0, 4);
+stepMove.wheelStepByStep("#allpage", 50, "y", 100, "%", 0, 8);
+stepMove.touchStepByStep("#allpage", 50, "y", 100, "%", 0, 8);
 
 /***        滚轮特殊位置触发效果                      ***/
 
@@ -258,41 +258,38 @@ document.addEventListener("wheel", function() {
 
 	if(pagecount.style.transform == "translateY(-100%)") {
 
-//		$("#pageTwoCenterTwoLeft").addClass("bounceInLeft");
-//		$("#pageTwoCenterTwoLeft").removeClass("bounceOutLeft");
-//		$("#pageTwoCenterOneRight").addClass("bounceInRight");
-//		$("#pageTwoCenterOneRight").removeClass("bounceOutRight");
-//		$("#pageTwoCenterThreeRight").addClass("bounceInRight");
-//		$("#pageTwoCenterThreeRight").removeClass("bounceOutRight");
-		
+		//		$("#pageTwoCenterTwoLeft").addClass("bounceInLeft");
+		//		$("#pageTwoCenterTwoLeft").removeClass("bounceOutLeft");
+		//		$("#pageTwoCenterOneRight").addClass("bounceInRight");
+		//		$("#pageTwoCenterOneRight").removeClass("bounceOutRight");
+		//		$("#pageTwoCenterThreeRight").addClass("bounceInRight");
+		//		$("#pageTwoCenterThreeRight").removeClass("bounceOutRight");
+
 		$("#pageTwoCenterTwoLeft").addClass("bounceInLeft");
 		$("#pageTwoCenterTwoLeft").removeClass("bounceOutLeft");
 		$("#pageTwoCenterOneRight").addClass("bounceInRightOne");
 		$("#pageTwoCenterOneRight").removeClass("bounceOutRightOne");
 		$("#pageTwoCenterThreeRight").addClass("bounceInRightTwo");
 		$("#pageTwoCenterThreeRight").removeClass("bounceOutRightTwo");
-		
 
 		//		console.log("scroll 2 access");
 
 	} else if(pagecount.style.transform == "translateY(-200%)" || pagecount.style.transform == "translateY(0%)") {
 
-//		$("#pageTwoCenterTwoLeft").removeClass("bounceInLeft");
-//		$("#pageTwoCenterTwoLeft").addClass("bounceOutLeft");
-//		$("#pageTwoCenterOneRight").removeClass("bounceInRight");
-//		$("#pageTwoCenterOneRight").addClass("bounceOutRight");
-//		$("#pageTwoCenterThreeRight").removeClass("bounceInRight");
-//		$("#pageTwoCenterThreeRight").addClass("bounceOutRight");
-		
-		
-		
+		//		$("#pageTwoCenterTwoLeft").removeClass("bounceInLeft");
+		//		$("#pageTwoCenterTwoLeft").addClass("bounceOutLeft");
+		//		$("#pageTwoCenterOneRight").removeClass("bounceInRight");
+		//		$("#pageTwoCenterOneRight").addClass("bounceOutRight");
+		//		$("#pageTwoCenterThreeRight").removeClass("bounceInRight");
+		//		$("#pageTwoCenterThreeRight").addClass("bounceOutRight");
+
 		$("#pageTwoCenterTwoLeft").removeClass("bounceInLeft");
 		$("#pageTwoCenterTwoLeft").addClass("bounceOutLeft");
 		$("#pageTwoCenterOneRight").removeClass("bounceInRightOne");
 		$("#pageTwoCenterOneRight").addClass("bounceOutRightOne");
 		$("#pageTwoCenterThreeRight").removeClass("bounceInRightTwo");
 		$("#pageTwoCenterThreeRight").addClass("bounceOutRightTwo");
-		
+
 		//      console.log("qwq1");
 
 	};
@@ -307,7 +304,10 @@ document.addEventListener("touchmove", function() {
 	if(pagecount.style.transform == "translateY(-100%)") {
 		$("#pageTwoCenterTwoLeft").addClass("bounceInLeft");
 		$("#pageTwoCenterTwoLeft").removeClass("bounceOutLeft");
-
+		$("#pageTwoCenterOneRight").addClass("bounceInRightOne");
+		$("#pageTwoCenterOneRight").removeClass("bounceOutRightOne");
+		$("#pageTwoCenterThreeRight").addClass("bounceInRightTwo");
+		$("#pageTwoCenterThreeRight").removeClass("bounceOutRightTwo");
 		//		document.getElementById("pageTwo_head").style.opacity = 1;
 		//		$("#pageTwo_center").removeClass("fontOut");
 		//		$("#pageTwo_center").addClass("fontIn");
@@ -319,7 +319,10 @@ document.addEventListener("touchmove", function() {
 
 		$("#pageTwoCenterTwoLeft").removeClass("bounceInLeft");
 		$("#pageTwoCenterTwoLeft").addClass("bounceOutLeft");
-
+		$("#pageTwoCenterOneRight").removeClass("bounceInRightOne");
+		$("#pageTwoCenterOneRight").addClass("bounceOutRightOne");
+		$("#pageTwoCenterThreeRight").removeClass("bounceInRightTwo");
+		$("#pageTwoCenterThreeRight").addClass("bounceOutRightTwo");
 		//		document.getElementById("pageTwo_head").style.opacity = 0;
 		//		$("#pageTwo_center").removeClass("fontIn");
 		//		$("#pageTwo_center").addClass("fontOut");
@@ -336,7 +339,6 @@ document.addEventListener("touchmove", function() {
 
 /*****************************************/
 
-
 function bottomEffect() {
 	let pagecount = document.getElementById("allpage");
 
@@ -344,16 +346,21 @@ function bottomEffect() {
 
 		$("#pageTwoCenterTwoLeft").addClass("bounceInLeft");
 		$("#pageTwoCenterTwoLeft").removeClass("bounceOutLeft");
-
+		$("#pageTwoCenterOneRight").addClass("bounceInRightOne");
+		$("#pageTwoCenterOneRight").removeClass("bounceOutRightOne");
+		$("#pageTwoCenterThreeRight").addClass("bounceInRightTwo");
+		$("#pageTwoCenterThreeRight").removeClass("bounceOutRightTwo");
 		//		console.log("调用第一页箭头");
 
 	} else if(pagecount.style.transform == "translateY(-100%)") {
-		
-		
+
 		$("#pageTwoCenterTwoLeft").removeClass("bounceInLeft");
 		$("#pageTwoCenterTwoLeft").addClass("bounceOutLeft");
+		$("#pageTwoCenterOneRight").removeClass("bounceInRightOne");
+		$("#pageTwoCenterOneRight").addClass("bounceOutRightOne");
+		$("#pageTwoCenterThreeRight").removeClass("bounceInRightTwo");
+		$("#pageTwoCenterThreeRight").addClass("bounceOutRightTwo");
 	};
-
 
 	/********************/
 	stepMove.touchDirection = "up";
@@ -361,39 +368,6 @@ function bottomEffect() {
 	/*******************/
 
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /***************************************************************************************************************/
 //document.addEventListener("wheel",function(){

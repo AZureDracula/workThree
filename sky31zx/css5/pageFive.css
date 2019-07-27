@@ -1,0 +1,71 @@
+
+
+#pageFive_2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: auto;
+}
+
+#Four_sea_night{
+    position: absolute;
+    height: 100%;
+    width: auto;
+    left: -2%;
+}
+
+.pageFour_box {
+    position: absolute;
+    overflow-y: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+#Four_light{
+    position: absolute;
+    left: -1vh;
+    height: 25vh;
+    top: 27.75vh;
+}
+
+#Four_moon{
+    position: absolute;
+    height: 67.5vh;
+    left: 70.3%;
+    top: 1vh;
+}
+
+#Four_ship{
+    position: absolute;
+    height: 55vh;
+    top: 29vh;
+    left: 13.3%;
+    z-index: 3;
+}
+
+#Four_stone{
+    position: absolute;
+    width: 80%;
+    top: 58.35vh;
+    left: 10.7%;
+}
+
+#Four_wave{
+    position: absolute;
+    height: 5.4vh;
+    top: 38.1vh;
+    left: 36.1%;
+    animation: Four_wave 3s linear infinite;
+}
+@keyframes Four_wave{
+    0%{transform: translateX(0);}
+    50%{transform: translateX(10px);}
+    100%{transform: translateX(0);}
+}
+
+#Four_dolphin{
+    position: absolute;
+    height: 10.3vh;
+    top: 32.1vh;
+    left: 48.58%;
+}
