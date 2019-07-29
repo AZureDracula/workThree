@@ -16,12 +16,12 @@
 		<link rel="stylesheet" href="css5/pageFive.css" />
 		<link rel="stylesheet" href="css4/translateelement.css">
 		<link rel="stylesheet" href="css4/swiper.min.css">
+
 		<style>
 			* {
 				margin: 0px;
 				padding: 0px;
-				font-size: 0px;
-				transition: all 0.8s;
+				transition: all 4s;
 			}
 			
 			html,
@@ -32,8 +32,10 @@
 			}
 			
 			h1 {
-				font-size: 100px;
+				font-size: 20px;
 			}
+			
+			
 		</style>
 	</head>
 
@@ -41,99 +43,12 @@
 		<img class="bottomArrow" src="img/jiantou.png" onclick="bottomEffect()" />
 		<div id="allpage" style="transform:  translateY(0%);">
 
-			<div class="bigPage first_page" id="first_page">
-				<div id="first_page_bg">
-					<img onclick="return false;" src="first_img/sky.png" id="first_sky">
-					<img onclick="return false;" src="first_img/sea_mount.png" id="first_sea_mount">
-					<img onclick="return false;" src="first_img/ship.png" id="first_ship">
-					<img onclick="return false;" src="first_img/front_mount.png" id="first_front_mount">
-					<img onclick="return false;" src="first_img/cloud_left.png" id="first_cloud_left">
-					<img onclick="return false;" src="first_img/cloud_right.png" id="first_cloud_right">
-					<img onclick="return false;" src="first_img/cloud_right_2.png" id="first_cloud_right_2">
-					<img onclick="return false;" src="first_img/cloud_right_2.png" id="first_cloud_right_2_1">
-					<img onclick="return false;" src="first_img/wave_1.png" id="first_wave_1">
-					<img onclick="return false;" src="first_img/wave_2.png" id="first_wave_2">
-					<img onclick="return false;" src="first_img/big_title.png" id="first_big_title">
-					<img onclick="return false;" src="first_img/LOGO.png" id="first_LOGO">
-					<img onclick="return false;" src="first_img/font.png" id="first_font">
-					<div class="first_page_button" id="first_page_button_1">
-						<img onclick="return false;" src="first_img/button.png" id="first_button">
-						<p>翼部门</p>
-					</div>
-					<div class="first_page_button" id="first_page_button_2">
-						<img onclick="return false;" src="first_img/button.png" id="first_button">
-						<p>录取查询</p>
-					</div>
-				</div>
-				<!--            以下是流星                                    -->
-				<div class="meteor-body">
-					<div class="main-con">
-						<div class="shooting_star"></div>
-						<div class="shooting_star"></div>
-						<div class="shooting_star"></div>
-						<div class="shooting_star"></div>
-						<div class="shooting_star"></div>
-						<div class="shooting_star"></div>
-						<div class="shooting_star"></div>
-					</div>
-				</div>
-				<!--            以上是流星                                    -->
-
-			</div>
-			<div class="bigPage" id="pageTwo" style=" text-align: center;">
-				<div id="pageTwoBox">
-
-					<div id="pageTwoHead">
-						<div id="pageTwoHeadTitleOne"></div>
-						<div id="pageTwoHeadTitleTwo"></div>
-						<div id="pageTwoHeadTitleThree"></div>
-						<div id="pageTwoHeadLogo"></div>
-					</div>
-					<div id="pageTwoCenterOne">
-						<!--<div id="pageTwoCenterOneLeftBig">-->
-						<div id="pageTwoCenterOneLeft"></div>
-						<!--</div>-->
-						<!--<div id="pageTwoCenterOneRightBig">-->
-						<div id="pageTwoCenterOneRight"></div>
-						<!--</div>-->
-					</div>
-					<div id="pageTwoCenterTwo">
-						<!--<div id="pageTwoCenterTwoLeftBig">-->
-						<div id="pageTwoCenterTwoLeft"></div>
-						<!--</div>-->
-						<!--<div id="pageTwoCenterTwoRightBig">-->
-						<div id="pageTwoCenterTwoRight"></div>
-						<!--</div>-->
-					</div>
-					<div id="pageTwoCenterThree">
-						<!--<div id="pageTwoCenterThreeLeftBig">-->
-						<div id="pageTwoCenterThreeLeft"></div>
-						<!--</div>-->
-						<!--<div id="pageTwoCenterThreeRightBig">-->
-						<div id="pageTwoCenterThreeRight"></div>
-						<!--</div>-->
-					</div>
-					<div id="pageTwolang"></div>
-					<div class="meteor-body">
-						<div class="main-con">
-							<div class="shooting_star"></div>
-							<div class="shooting_star"></div>
-							<div class="shooting_star"></div>
-							<div class="shooting_star"></div>
-							<div class="shooting_star"></div>
-							<div class="shooting_star"></div>
-							<div class="shooting_star"></div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-			<div class="bigPage" id="pageThree"></div>
 			<div class="bigPage" id="pageFour">
 				<div class="pageFourTitle bounceDown" id="pageFourTitleOne"></div>
 				<div class="pageFourTitle bounceUp" id="pageFourTitleTwo"></div>
 				<div class="pageFourTitle bounceUp" id="pageFourTitleThree"></div>
-
+				
+				
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
@@ -165,7 +80,6 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
 			<div class="bigPage" id="pageFive">
 				<div class="pageFour" id="pageFive_2">
@@ -236,39 +150,41 @@
 						} else if(this.activeIndex % 9 == 8) {
 							console.log("通讯社    ： 毕方");
 						};
-
-						if(this.activeIndex % 9 >= 0 && this.activeIndex % 9 <= 3) {
+						
+						if(this.activeIndex % 9 >= 0 && this.activeIndex % 9 <=3){
 							console.log("0-3");
 
 							$("#pageFourTitleOne").removeClass("bounceUp");
 							$("#pageFourTitleOne").addClass("bounceDown");
-
-							$("#pageFourTitleTwo").removeClass("bounceDown");
+							
+							$("#pageFourTitleTwo").removeClass("bounceDown");							
 							$("#pageFourTitleTwo").addClass("bounceUp");
-
+							
 							$("#pageFourTitleThree").removeClass("bounceDown");
 							$("#pageFourTitleThree").addClass("bounceUp");
 
-						} else if(this.activeIndex % 9 > 3 && this.activeIndex % 9 <= 5) {
+						
+						}else if(this.activeIndex % 9 > 3 && this.activeIndex % 9 <=5){
 							console.log("4-5");
-
+							
+							
 							$("#pageFourTitleOne").removeClass("bounceDown");
 							$("#pageFourTitleOne").addClass("bounceUp");
-
+							
 							$("#pageFourTitleThree").removeClass("bounceDown");
 							$("#pageFourTitleThree").addClass("bounceUp");
-
+							
 							$("#pageFourTitleTwo").removeClass("bounceUp");
 							$("#pageFourTitleTwo").addClass("bounceDown");
-
-						} else if(this.activeIndex % 9 > 5 && this.activeIndex % 9 <= 8) {
+						
+						}else if(this.activeIndex % 9 > 5 && this.activeIndex % 9 <=8){
 							console.log("6-8");
 							$("#pageFourTitleOne").removeClass("bounceDown");
 							$("#pageFourTitleOne").addClass("bounceUp");
-
+							
 							$("#pageFourTitleTwo").removeClass("bounceDown");
 							$("#pageFourTitleTwo").addClass("bounceUp");
-
+							
 							$("#pageFourTitleThree").removeClass("bounceUp");
 							$("#pageFourTitleThree").addClass("bounceDown");
 						};
@@ -278,6 +194,7 @@
 				//spaceBetween: "8%",
 				//spaceBetween : '10%',按container的百分比
 			});
+			
 		</script>
 	</body>
 
