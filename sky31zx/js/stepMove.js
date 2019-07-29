@@ -247,7 +247,7 @@ let stepMove = {
 
 /******************************/
 
-let height = window.innerHeight;
+
 stepMove.wheelStepByStep("#allpage", 50, "y", 100, "%", 0, 8);
 stepMove.touchStepByStep("#allpage", 50, "y", 100, "%", 0, 8);
 
