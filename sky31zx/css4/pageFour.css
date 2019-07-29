@@ -72,7 +72,7 @@
 	top:     4.16666666vh;
 	transform: translate(-50%,0%);
 
-	background-image: url(../img4/pageFourTitleOne.png);
+	background-image: url(https://s2.ax1x.com/2019/07/29/e3IRU0.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 100%;
@@ -186,7 +186,7 @@
 }
 
 .bounceDown {
-
+	display: inline-block;
 	-webkit-animation: bounceDown  0.5s;
 	animation-iteration-count: 1;
 	animation: bounceDown  0.5s;
@@ -200,6 +200,6 @@
 	animation: bounceUp  0.5s;
 	animation-iteration-count: 1;
 	-webkit-animation-iteration-count: 1;
-	background: none !important;
+	display: none ;
 	
 }
