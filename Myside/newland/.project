@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>总和</name>
+	<name>sshiiiit</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -16,7 +16,25 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1564726229655</id>
+			<id>1563936868136</id>
+			<name></name>
+			<type>26</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-node_modules</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1564727783619</id>
+			<name></name>
+			<type>26</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-node_modules</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1564733444878</id>
 			<name></name>
 			<type>26</type>
 			<matcher>
