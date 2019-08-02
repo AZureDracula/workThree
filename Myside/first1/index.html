@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -11,8 +12,12 @@
 		<link rel="stylesheet" href="css1/first.css">
 		<link rel="stylesheet" href="css2/pageTwo.css" />
 		<link rel="stylesheet" href="css2/pageTwo_donghua.css" />
-		
-		
+		<link rel="stylesheet" href="css3/Thrid.css" />
+		<link rel="stylesheet" href="css3/star.css"> 
+		<link rel="stylesheet" href="css4/four.css">
+		<link rel="stylesheet" href="css4/four_star.css">
+
+
 		<link rel="stylesheet" href="css6/swiper.min.css" />
 		<link rel="stylesheet" href="css6/translateelement.css" />
 		<link rel="stylesheet" href="css6/pageSix.css" />
@@ -32,7 +37,7 @@
 				height: 100%;
 				overflow: hidden;
 				touch-action: none;
-				webkit-user-select: none;
+				-webkit-user-select: none;
 				-moz-user-select: none;
 				-ms-user-select: none;
 				user-select: none;
@@ -40,12 +45,6 @@
 			
 			h1 {
 				font-size: 100px;
-			}
-			#pageThree{
-				background-color: red;
-			}
-			#pageFour{
-				background-color: aliceblue;
 			}
 			#pageFive{
 				background-color: aquamarine;
@@ -74,29 +73,15 @@
 					<img onclick="return false;" src="first_img/big_title.png" id="first_big_title">
 					<img onclick="return false;" src="first_img/LOGO.png" id="first_LOGO">
 					<img onclick="return false;" src="first_img/font.png" id="first_font">
-					<div class="first_page_button" id="first_page_button_1">
+					<div onclick="bumen()" class="first_page_button" id="first_page_button_1">
 						<img onclick="return false;" src="first_img/button.png" id="first_button">
 						<p>翼部门</p>
 					</div>
-					<div class="first_page_button" id="first_page_button_2">
+					<a  href="../sshiiiit/inquiry.html" target="_blank" class="first_page_button" id="first_page_button_2">
 						<img onclick="return false;" src="first_img/button.png" id="first_button">
 						<p>录取查询</p>
-					</div>
+					</a>
 				</div>
-				<!--            以下是流星                                    -->
-				<div class="meteor-body">
-					<div class="main-con">
-						<div class="shooting_star"></div>
-						<div class="shooting_star"></div>
-						<div class="shooting_star"></div>
-						<div class="shooting_star"></div>
-						<div class="shooting_star"></div>
-						<div class="shooting_star"></div>
-						<div class="shooting_star"></div>
-					</div>
-				</div>
-				<!--            以上是流星                                    -->
-
 			</div>
 			<div class="bigPage" id="pageTwo" style=" text-align: center;">
 				<div id="pageTwoBox">
@@ -108,28 +93,16 @@
 						<div id="pageTwoHeadLogo"></div>
 					</div>
 					<div id="pageTwoCenterOne">
-						<!--<div id="pageTwoCenterOneLeftBig">-->
 						<div id="pageTwoCenterOneLeft"></div>
-						<!--</div>-->
-						<!--<div id="pageTwoCenterOneRightBig">-->
 						<div id="pageTwoCenterOneRight"></div>
-						<!--</div>-->
 					</div>
 					<div id="pageTwoCenterTwo">
-						<!--<div id="pageTwoCenterTwoLeftBig">-->
 						<div id="pageTwoCenterTwoLeft"></div>
-						<!--</div>-->
-						<!--<div id="pageTwoCenterTwoRightBig">-->
 						<div id="pageTwoCenterTwoRight"></div>
-						<!--</div>-->
 					</div>
 					<div id="pageTwoCenterThree">
-						<!--<div id="pageTwoCenterThreeLeftBig">-->
 						<div id="pageTwoCenterThreeLeft"></div>
-						<!--</div>-->
-						<!--<div id="pageTwoCenterThreeRightBig">-->
 						<div id="pageTwoCenterThreeRight"></div>
-						<!--</div>-->
 					</div>
 					<div id="pageTwolang"></div>
 					<div class="meteor-body">
@@ -146,8 +119,96 @@
 				</div>
 
 			</div>
-			<div class="bigPage" id="pageThree"></div>
-			<div class="bigPage" id="pageFour"></div>
+			<div class="bigPage" id="pageThree">
+				<div class="pageThrid" id="pageThrid">
+					<div class="zhanwei">
+						<div id="Thrid_bg"></div>
+						<div class="Thrid_meteor-body">
+							<div class="Thrid_main-con">
+								<div class="Thrid_shooting_star"></div>
+								<div class="Thrid_shooting_star"></div>
+								<div class="Thrid_shooting_star"></div>
+								<div class="Thrid_shooting_star"></div>
+								<div class="Thrid_shooting_star"></div>
+								<div class="Thrid_shooting_star"></div>
+								<div class="Thrid_shooting_star"></div>
+							</div>
+						</div>
+						<div class="shicha">
+							<div class="pageThrid_box">
+								<div class="Thrid_font">
+									<img src="img3/FONT.png" id="Thrid_font" onclick="return false"/>
+									<img src="img3/LOGO.png" id="Thrid_logo" onclick="return false"/>
+									<img src="img3/MANAGE.png" id="Thrid_manage" onclick="return false"/>
+								</div>
+								<img src="img3/big_moon.png" id="Thrid_moon" onclick="return false"/>
+								<img src="img3/behind_hill.png" id="Thrid_behind_hill" onclick="return false"/>
+								<img src="img3/front_hill.png" id="Thrid_front_hill" onclick="return false"/>
+								<img src="img3/dear.png" id="Thrid_dear" onclick="return false"/>
+							</div>
+						</div>
+						<div class="wendang">
+							<div class="textone">
+								<img src="img3/text.png" id="Thrid_text_1" onclick="return false"/>
+							</div>
+							<img src="img3/arrow.png" id="Thrid_arrow_1" onclick="return false"/>
+							<div class="texttwo">
+								<img src="img3/text.png" id="Thrid_text_2" onclick="return false"/>
+							</div>
+							<img src="img3/arrow.png" id="Thrid_arrow_2" onclick="return false"/>
+							<div class="textthree">
+								<img src="img3/text.png" id="Thrid_text_3" onclick="return false"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bigPage" id="pageFour">
+				<div class="pagefour" id="pagefour">
+					<div class="zhanwei">
+						<div id="four_sky"></div>
+						<div class="four_meteor-body">
+							<div class="four_main-con">
+								<div class="four_shooting_star"></div>
+								<div class="four_shooting_star"></div>
+								<div class="four_shooting_star"></div>
+								<div class="four_shooting_star"></div>
+								<div class="four_shooting_star"></div>
+								<div class="four_shooting_star"></div>
+								<div class="four_shooting_star"></div>
+							</div>
+						</div>
+						<div class="shicha">
+							<div class="pagefour_box">
+								<div class="Four_font">
+									<img src="img4/font.png" id="four_font" onclick="return false"/>
+									<img src="img4/LOGO.png" id="four_logo" onclick="return false"/>
+									<img src="img4/product.png" id="four_product" onclick="return false"/>
+								</div>
+								<img src="img4/moon.png" id="four_moon" onclick="return false"/>
+								<img src="img4/mount.png" id="four_mount" onclick="return false"/>
+								<img src="img4/behind.png" id="four_behind" onclick="return false"/>
+								<img src="img4/cloud_up.png" id="four_cloud_up" onclick="return false"/>
+								<img src="img4/cloud_down.png" id="four_cloud_down" onclick="return false"/>
+								<img src="img4/front.png" id="four_front" onclick="return false"/>
+							</div>
+						</div>
+						<div class="four_wendang">
+							<div class="four_textone">
+								<img src="img4/text.png" id="four_text_1" onclick="return false"/>
+							</div>
+							<img src="img4/arrow.png" id="four_arrow_1" onclick="return false"/>
+							<div class="four_texttwo">
+								<img src="img4/text.png" id="four_text_2" onclick="return false"/>
+							</div>
+							<img src="img4/arrow.png" id="four_arrow_2" onclick="return false"/>
+							<div class="four_textthree">
+								<img src="img4/text.png" id="four_text_3" onclick="return false"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="bigPage" id="pageFive"></div>
 			<!-----     下面是部门介绍     ----->
 			<div class="bigPage pageSixBgOne" id="pageSix">
@@ -200,16 +261,34 @@
 				<div class="pageSixBoard bounceOff" id="pageSixBoardEight"></div>
 				<div class="pageSixBoard bounceOff" id="pageSixBoardNine" ></div>
 				<!--------------------------------------------------->
-				<a id="pageSixButton" href="https://www.baidu.com/" target="_blank"></a>
+				<a id="pageSixButton"  href="../sshiiiit/index.html" target="_blank"></a>
 				
 			</div>
 			<!-----     上面是部门介绍     ----->
 		</div>
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 		<script type="text/javascript" src="js/stepMove.js"></script>
-		
+		<script type="text/javascript" src="js3/pageThree.js"></script>
+		<script type="text/javascript" src="js4/pagefour.js"></script>
 		<script type="text/javascript" src="js6/swiper.min.js" ></script>
 		<script type="text/javascript" src="js6/pageSix.js" ></script>
+		<script>
+			function bumen(){
+				console.log("ddas");
+				let allpaged = document.getElementById("allpage");
+//				allpaged.style.transform = "translateY(-500%)";
+				let a = -500;
+				let b = 5;
+				stepMove.changeCount = stepMove.changeCount + a;
+				stepMove.downTimes = stepMove.downTimes + b;
+				stepMove.scrollPage();
+				allpaged.style.transform = "translateY(-500%)";
+				$("#bottomArrow").removeClass("showOn");
+				$("#bottomArrow").addClass("showOff");
+//				stepMove.downTimes = stepMove.downTimes + 4;
+//				stepMove.touchCount = stepMove.touchCount+4;
+			}
+		</script>
 	</body>
 
 </html>

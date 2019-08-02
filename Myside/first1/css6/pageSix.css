@@ -411,7 +411,7 @@
 	display: inline-block;
 	position: absolute;
 	z-index: 100;
-	top:  87vh;
+	bottom:  6vh;
 	left: 50%;
 	transform: translate(-50%,0%);
 	width: 22.39583333vh;

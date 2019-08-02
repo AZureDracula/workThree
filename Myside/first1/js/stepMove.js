@@ -126,9 +126,11 @@ let stepMove = {
 		//		console.log("  stepMove.scrollingFlag  " +stepMove.scrollingFlag);
 		//		console.log("  stepMove.wheelCount1  " +stepMove.wheelCount1);
 		//		console.log("  stepMove.wheelCount  " +stepMove.wheelCount);
-		//		console.log("  stepMove.touchCount  " +stepMove.touchCount);
-		//		console.log("  downTimes  " + this.downTimes);
-		//		console.log("  upTimes  " + this.upTimes);
+				console.log("  stepMove.touchCount  " +stepMove.touchCount);
+				console.log("  downTimes  " + this.downTimes);
+				console.log("  upTimes  " + this.upTimes);
+				console.log("  downTimes  " + this.downTimes);
+				
 
 		stepMove.scrollingFlag = true;
 		stepMove.wheelCount1 = stepMove.wheelCount = null;
@@ -142,17 +144,21 @@ let stepMove = {
 		// 这个是向下滚动                                                                                                                            
 		if(stepMove.touchDirection === "up" && down < this.maxDown || stepMove.wheelDirection == "down" && stepMove.targetElement != null && down < this.maxDown) {
 			//		console.log("11");
-
+			console.log("stepMove.touchDirection === up");
+			console.log("stepMove.changeCount " + stepMove.changeCount);
 			stepMove.changeCount = stepMove.changeCount - stepMove.perDisplacement; //用trasfrom要改变这里的正负(原本是+)
 			document.querySelector(stepMove.targetElement).style.transform = "translate" + stepMove.axisDirection.toUpperCase() + "(" + stepMove.changeCount + stepMove.displacementUnit + ")";
 			this.downTimes++;
+			console.log("  downTimes  " + this.downTimes);
+			
 			stepMove.getTouchStart(event);
 		} else if(stepMove.touchDirection === "down" && (-1 * down) < this.maxUp || stepMove.wheelDirection == 'up' && stepMove.targetElement != null && (-1 * down) < this.maxUp) {
 			//		console.log("12");
-
+			console.log("stepMove.touchDirection === down");
 			stepMove.changeCount = stepMove.changeCount + stepMove.perDisplacement;
 			document.querySelector(stepMove.targetElement).style.transform = "translate" + stepMove.axisDirection.toUpperCase() + "(" + stepMove.changeCount + stepMove.displacementUnit + ")";
 			this.upTimes++;
+			console.log("  upTimes  " + this.upTimes);
 			stepMove.getTouchStart(event);
 		} else {
 			//		console.log("13");
@@ -160,7 +166,7 @@ let stepMove = {
 			this.scrollingFlag = false;
 		}
 		// stepMove.getTouchStart(event);
-		// console.log(stepMove.changeCount);
+		 console.log(stepMove.changeCount);
 		//console.log(stepMove.scrollingFlag);
 
 	},
@@ -183,8 +189,9 @@ let stepMove = {
 		//		console.log("  y  " + y);
 		y > 0 ? stepMove.touchDirection = 'up' : stepMove.touchDirection = 'down';
 		//		console.log("  stepMove.touchCount1  " +stepMove.touchCount);
+//				console.log("  stepMove.touchCountbefore  " +stepMove.touchCount);
 		stepMove.touchCount++;
-		//		console.log("  stepMove.touchCount2  " +stepMove.touchCount);
+//				console.log("  stepMove.touchCountafter  " +stepMove.touchCount);
 		stepMove.getTouchCount(y, event);
 	},
 	touchStepByStep: (targetElement, decisionCoefficient = 100, axisDirection = "y", perDisplacement = 100, displacementUnit = "px") => {
@@ -203,7 +210,7 @@ let stepMove = {
 	},
 	getTouchCount: (y, event) => {
 		//		console.log("11");
-		//console.log("y:" + y + " Count:" + stepMove.touchCount)
+//		console.log("y:" + y + " Count:" + stepMove.touchCount)
 		if(stepMove.scrollingFlag == false) {
 			//		console.log("12");
 			if(Math.abs(y) / stepMove.touchCount > 50 && Math.abs(y) / stepMove.touchCount < 100) {
@@ -354,9 +361,9 @@ document.addEventListener("touchmove", function() {
 /*****************************************/
 
 function bottomEffect() {
-	let pagecount = document.getElementById("allpage");
+	let pagecount3 = document.getElementById("allpage");
 
-	if(pagecount.style.transform == "translateY(0%)") {
+	if(pagecount3.style.transform == "translateY(0%)") {
 
 		$("#pageTwoCenterTwoLeft").addClass("bounceInLeft");
 		$("#pageTwoCenterTwoLeft").removeClass("bounceOutLeft");
@@ -366,7 +373,7 @@ function bottomEffect() {
 		$("#pageTwoCenterThreeRight").removeClass("bounceOutRightTwo");
 		//		console.log("调用第一页箭头");
 
-	} else if(pagecount.style.transform == "translateY(-100%)") {
+	} else if(pagecount3.style.transform == "translateY(-100%)") {
 
 		$("#pageTwoCenterTwoLeft").removeClass("bounceInLeft");
 		$("#pageTwoCenterTwoLeft").addClass("bounceOutLeft");
@@ -375,7 +382,7 @@ function bottomEffect() {
 		$("#pageTwoCenterThreeRight").removeClass("bounceInRightTwo");
 		$("#pageTwoCenterThreeRight").addClass("bounceOutRightTwo");
 	};
-	if(pagecount.style.transform == "translateY(-500%)"){
+	if(pagecount3.style.transform == "translateY(-400%)"){
 		$("#bottomArrow").removeClass("showOn");
 		$("#bottomArrow").addClass("showOff");
 	}else{

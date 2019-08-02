@@ -298,9 +298,9 @@
 						if(this.activeIndex % 9 >= 0 && this.activeIndex % 9 <=3){
 							console.log("0-3");
 							
-							$("#pageSix").removeClass("pageSixBgTwo");
-							$("#pageSix").removeClass("pageSixBgThree");
-							$("#pageSix").addClass("pageSixBgOne");
+//							$("#pageSix").removeClass("pageSixBgTwo");
+//							$("#pageSix").removeClass("pageSixBgThree");
+//							$("#pageSix").addClass("pageSixBgOne");
 							
 							
 							$("#pageSixTitleOne").removeClass("bounceUp");
@@ -316,9 +316,9 @@
 						}else if(this.activeIndex % 9 > 3 && this.activeIndex % 9 <=5){
 							console.log("4-5");
 							
-							$("#pageSix").removeClass("pageSixBgOne");
-							$("#pageSix").removeClass("pageSixBgThree");
-							$("#pageSix").addClass("pageSixBgTwo");
+//							$("#pageSix").removeClass("pageSixBgOne");
+//							$("#pageSix").removeClass("pageSixBgThree");
+//							$("#pageSix").addClass("pageSixBgTwo");
 							
 							
 							
@@ -335,9 +335,9 @@
 							console.log("6-8");
 							
 							
-							$("#pageSix").removeClass("pageSixBgOne");
-							$("#pageSix").removeClass("pageSixBgTwo");
-							$("#pageSix").addClass("pageSixBgThree");
+//							$("#pageSix").removeClass("pageSixBgOne");
+//							$("#pageSix").removeClass("pageSixBgTwo");
+//							$("#pageSix").addClass("pageSixBgThree");
 							
 							
 							
