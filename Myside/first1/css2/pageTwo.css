@@ -1,14 +1,4 @@
-@media screen and (min-height: 800px) {
-	#pageTwo {
-		width: 100%;
-		height: 100%;
-		background-image: url(../img2/pageTwoBg.png);
-		background-size: 100% 100%;
-		background-repeat: no-repeat;
-		background-position: center;
-		overflow-x: scroll;
-	}
-}
+
 
 #pageTwo {
 	width: 100%;
