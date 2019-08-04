@@ -41,7 +41,7 @@
 			<div id="water">
 				<img src="img/mount_water.png" width="100%" />
 			</div>
-			<form action="insert.php" method="post">
+			<form action="select.php" method="post">
 				<div class="inForm">
 					<div id="inRepeat1">
 						<input type="text" name="name" id="inName" placeholder="姓名" />
@@ -66,7 +66,7 @@
 
 			function checkinForm() {
 				if(name.value == '' && tel.value == '') {
-					alert("请填写报名表！")
+					alert("请填写表格！")
 					return(false)
 				}
 				if(name.value == '') {
@@ -103,9 +103,9 @@
 						request(url,
 							'POST',
 							JSON.stringify($(this).serializeObject()),
-							function() {
-								alert('123');
-							},
+//							function() {
+//								alert('123');
+//							},
 							null);
 					});
 				});
@@ -122,7 +122,22 @@
 					dataType: "json",
 					url: url,
 					data: param,
-					success: callback,
+					success: function(data) {
+						console.log(data);
+						if(data.code == 0){
+							sessionStorage.obj = JSON.stringify(data);
+							console.log(sessionStorage.obj);
+							window.location.href="status.html";
+						} else if(data.code == 1){
+							alert("数据库操作有误！");
+						} else if(data.code == 2){
+							alert("请求错误！");
+						} else if(data.code == 3){
+							alert("参数缺失！");
+						} else if(data.code == 4){
+							alert("查无此人，请确认是否报名");
+						}
+					},
 					error: fail,
 				});
 			}

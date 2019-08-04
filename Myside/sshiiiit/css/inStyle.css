@@ -37,6 +37,13 @@ body:before {
 	src: url(../fonts/subs.TTF);
 }
 
+#box{
+	position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
 .inTitle {
 	width: 100%;
 	height: 600px;

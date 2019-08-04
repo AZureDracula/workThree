@@ -5,12 +5,13 @@ $dbuser = 'root';            // mysql用户名
 $dbpass = 'root';          // mysql用户名密码
 $conn = mysqli_connect($dbhost, $dbuser, $dbpass);
 
-$select = $_POST['select'];
-$json = json_decode($select,true);
+//$select = $_POST['select'];
+$json = json_decode(file_get_contents("php://input"), true);
 //用户参数
 
 $name = $json['name'];
 $tel = $json['tel'];
+$data = null;
 
 if(!$conn){
     $code = "2";
@@ -54,6 +55,7 @@ else {
         mysqli_close($conn);
     }
 }
+
 $result = array(
     'code' => $code,
     'message' => $message,

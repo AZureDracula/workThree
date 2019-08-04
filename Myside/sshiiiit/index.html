@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
 	</head>
 
-	<body onload="getInsideArr()">
+	<body>
 		<div id="box">
 			<div class="title">
 				三翼工作室招募令
@@ -133,19 +133,19 @@
 							<div id="cPutText">
 								小 金 卡 号
 							</div>
-							<input type="text" name="cardID" id="cardID" value="" />
+							<input type="text" name="cardID" id="cardID" />
 						</div>
 						<div id="cardPart">
 							<div id="cPutText">
 								小伙伴姓名
 							</div>
-							<input type="text" name="companyName" id="cardID" value="" />
+							<input type="text" name="companyName" id="cardID" />
 						</div>
 						<div id="cardPart">
 							<div id="cPutText">
 								小伙伴卡号
 							</div>
-							<input type="text" name="companyCardID" id="cardID" value="" />
+							<input type="text" name="companyCardID" id="cardID" />
 						</div>
 					</div>
 					<input type="submit" value="报名" id="sign" onclick="return checkForm()" />
@@ -211,14 +211,26 @@
 				}
 			}
 
-			function getInsideArr() {
-				var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-				var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-				document.getElementById("box").style.width = w + "px";
-				document.getElementById("box").style.height = h + "px";
-			};
-			//			var element = document.getElementById("box");
-			//			element.scrollIntoView(true)
+			//			function getInsideArr() {
+			//				var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+			//				var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+			//				document.getElementById("box").style.width = w + "px";
+			//				document.getElementById("box").style.height = h + "px";
+			//			};
+
+			(function(width) {
+				var doc = width.document,
+					element = doc.documentElement,
+					i = 640,
+					d = i / 100,
+					o = "orientationchange" in width ? "orientationchange" : "resize",
+					a = function() {
+						var width = element.clientWidth || 320;
+						width > 640 && (width = 640);
+						element.style.fontSize = width / d + "px"
+					};
+				doc.addEventListener && (width.addEventListener(o, a, !1), doc.addEventListener("DOMContentLoaded", a, !1))
+			})(window);
 
 			$(function() {
 				//获取网页中所有的form表单
@@ -253,16 +265,26 @@
 					url: url,
 					data: param,
 					success: function(data) {
-							console.log(data);
-							if(data.code == 0) {
-								alert("报名表提交成功！");
-							} else if(data.code == 1) {
-								alert("报名表提交失败,数据库操作有误，请联系技术人员！");
-							} else if(data.code == 2) {
-								alert("报名表提交失败,请求错误，请联系技术人员！");
-							} else if(data.code == 3) {
-								alert("报名表提交失败,参数缺失，请联系技术人员！");
-							}
+						console.log(data);
+						console.log(data.message);
+						if(data.code == 0) {
+							alert("报名表提交成功！");
+							window.location.reload();
+							//								sessionStorage.obj = JSON.stringify(data);
+							//								console.log(sessionStorage.obj);
+						} else if(data.code == 1) {
+							alert("报名表提交失败,数据库操作有误，请联系技术人员！");
+							window.location.reload();
+						} else if(data.code == 2) {
+							alert("报名表提交失败,请求错误，请联系技术人员！");
+							window.location.reload();
+						} else if(data.code == 3) {
+							alert("报名表提交失败,参数缺失，请联系技术人员！");
+							window.location.reload();
+						} else if(data.code == 4) {
+							alert("已经报过名啦，不要重复报名哦！");
+							window.location.reload();
+						}
 					},
 					error: fail,
 				});
