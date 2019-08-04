@@ -122,25 +122,32 @@
 
 @-webkit-keyframes Five_shooting {
 	0% {
-		-webkit-transform: translate3d(0, 0, 0);
-		transform: translate3d(0, 0, 0);
-		
+
+
+		-webkit-transform:translate(0px,0px);
+		transform:translate(0px,0px);
 	}
+	
 	100% {
-		-webkit-transform: translate3d(7.208333333vh,7.208333333vh, 0);
-		transform: translate3d(7.208333333vh,7.208333333vh, 0);
-		
+
+
+		-webkit-transform:translate(7.208333333vh,7.208333333vh);
+		transform:translate(7.208333333vh,7.208333333vh);
 	}
 }
 
 @keyframes Five_shooting {
 	0% {
-		-webkit-transform: translate3d(0, 0, 0);
-		transform: translate3d(0, 0, 0);
+
+
+		-webkit-transform:translate(0px,0px);
+		transform:translate(0px,0px);
 	}
+	
 	100% {
-		-webkit-transform: translate3d(7.208333333vh,7.208333333vh, 0);
-		transform: translate3d(7.208333333vh,7.208333333vh, 0);
-		
+
+
+		-webkit-transform:translate(7.208333333vh,7.208333333vh);
+		transform:translate(7.208333333vh,7.208333333vh);
 	}
 }
