@@ -9,15 +9,7 @@ body {
     margin: 0;
 }
 
-@font-face{
-    font-family:zaozi;
-    src: url('../zaozi.otf');
-}
 
-@font-face{
-    font-family:zxf;
-    src: url('../zxf.ttf');
-}
 
 #pagefour{
     width: 100%;
@@ -180,7 +172,7 @@ body {
 .four_texttwo, .four_textthree{
     display: none;
 }
-
+/*
 .four_textone>h4{
     position: absolute;
     left: 6%;
@@ -344,7 +336,7 @@ body {
     font-size: 2.5vh;
     font-family: 'zxf';
     color: #475c7c;
-}
+}*/
 
 #four_arrow_1, #four_arrow_2{
     height: 2.725vh;

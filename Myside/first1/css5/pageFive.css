@@ -9,15 +9,6 @@ body {
     margin: 0;
 }
 
-@font-face{
-    font-family:zaozi;
-    src: url('../zaozi.otf');
-}
-
-@font-face{
-    font-family:zxf;
-    src: url('../zxf.ttf');
-}
 
 #pageFive_2{
     width: 100%;
@@ -157,7 +148,7 @@ body {
 .five_texttwo, .five_textthree{
     display: none;
 }
-
+/*
 .five_textone>h4{
     position: absolute;
     left: 7%;
@@ -303,7 +294,7 @@ body {
     font-size: 2vh;
     font-family: 'zxf';
     color: #475c7c;
-}
+}*/
 
 #five_arrow_1, #five_arrow_2{
     height: 2.725vh;
