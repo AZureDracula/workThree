@@ -1,137 +1,121 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>fullPage.js — 基本演示_dowebok</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css5/pageFive.css">
+<link rel="stylesheet" href="css5/five_star.css">
+<style>
+.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+</style>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script>
+$(function(){
+	$('#dowebok').fullpage({
+		sectionsColor: ['#1bbc9b', '#4BBFC3', '#f90']
+	});
+});
+</script>
+</head>
 
-	<head>
-		<meta charset="utf-8">
-		<title>fullPage.js — 基本演示_dowebok</title>
-		<link rel="stylesheet" href="css/jquery.fullPage.css">
-		<link rel="stylesheet" href="css5/pageFive.css">
-		<link rel="stylesheet" href="css5/five_star.css">
-		<style>
-			.section {
-				text-align: center;
-				font: 50px "Microsoft Yahei";
-				color: #fff;
-			}
-		</style>
-		<script src="js/jquery-1.8.3.min.js"></script>
-		<script src="js/jquery.fullPage.min.js"></script>
-		<script>
-			$(function() {
-				$('#dowebok').fullpage({
-					sectionsColor: ['#1bbc9b', '#4BBFC3', '#f90']
-				});
-			});
-		</script>
-	</head>
+<body>
 
-	<body>
-
-		<div id="dowebok">
-			<div class="section">
-				<h3>第一屏</h3>
-				<p>fullPage.js — 基本演示</p>
-			</div>
-			<div class="section">
-				<div class="slide">
-					<h3>第二屏的第一屏</h3></div>
-				<div class="slide">
-					<h3>第二屏的第二屏</h3></div>
-				<div class="slide">
-					<h3>第二屏的第三屏</h3></div>
-			</div>
-			<div class="section">
-				<div class="pageFifth" id="pageFive_2">
-					<div class="zhanwei">
-						<!-- <img src="img4/sea_night.png" id="Four_sea_night"/> -->
-						<div id="Five_bg"></div>
-						<div class="Five_meteor-body">
-							<div class="Five_main-con">
-								<div class="Five_shooting_star"></div>
-								<div class="Five_shooting_star"></div>
-								<div class="Five_shooting_star"></div>
-								<div class="Five_shooting_star"></div>
-								<div class="Five_shooting_star"></div>
-								<div class="Five_shooting_star"></div>
-								<div class="Five_shooting_star"></div>
-							</div>
+<div id="dowebok">
+	<div class="section">
+		<h3>第一屏</h3>
+		<p>fullPage.js — 基本演示</p>
+	</div>
+	<div class="section">
+		<div class="slide"><h3>第二屏的第一屏</h3></div>
+		<div class="slide"><h3>第二屏的第二屏</h3></div>
+		<div class="slide"><h3>第二屏的第三屏</h3></div>
+	</div>
+	<div class="section">
+		<div class="pageFifth" id="pageFive_2">
+			<div class="zhanwei" >
+				<!-- <img src="img4/sea_night.png" id="Four_sea_night"/> -->
+				<div id="Five_bg"></div>
+				<div class="Five_meteor-body">
+					<div class="Five_main-con">
+						<div class="Five_shooting_star"></div>
+						<div class="Five_shooting_star"></div>
+						<div class="Five_shooting_star"></div>
+						<div class="Five_shooting_star"></div>
+						<div class="Five_shooting_star"></div>
+						<div class="Five_shooting_star"></div>
+						<div class="Five_shooting_star"></div>
+					</div>
+				</div>
+				<div class="shicha">
+					<div class="pagefive_box">
+						<div class="five_font">
+							<img src="img5/FONT.png" id="five_font" onclick="return false"/>
+							<img src="img5/LOGO.png" id="five_logo" onclick="return false"/>
+							<img src="img5/media.png" id="five_media" onclick="return false"/>
 						</div>
-						<div class="shicha">
-							<div class="pagefive_box">
-								<div class="five_font">
-									<img src="img5/FONT.png" id="five_font" onclick="return false" />
-									<img src="img5/LOGO.png" id="five_logo" onclick="return false" />
-									<img src="img5/media.png" id="five_media" onclick="return false" />
-								</div>
-								<img src="img5/light.png" id="five_light" onclick="return false" />
-								<img src="img5/moon.png" id="five_moon" onclick="return false" />
-								<img src="img5/ship.png" id="five_ship" onclick="return false" />
-								<img src="img5/stone.png" id="five_stone" onclick="return false" />
-								<img src="img5/wave.png" id="five_wave" onclick="return false" />
-								<img src="img5/dolphin.png" id="five_dolphin" onclick="return false" />
-							</div>
-						</div>
-						<div class="five_wendang">
-							<div class="five_textone">
-								<img src="img5/text.png" id="five_text_1" onclick="return false" />
-								<h4>山海之间最强音</h4>
-								<p>湘潭大学三翼校园</p>
-								<div class="triangle"></div>
-								<p>湘大<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">最具影响力</span>公众号</p>
-								<p>总阅读量<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">40000+</span></p>
-								<p>粉丝总数<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">100000+</span></p>
-								<p>荣获<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">湖南省青媒奖</span></p>
-							</div>
-							<img src="img5/arrow.png" id="five_arrow_1" onclick="return false" />
-							<div class="five_texttwo">
-								<img src="img5/text.png" id="five_text_2" onclick="return false" />
-								<h4>融会通浃最贴心</h4>
-								<p>三翼校园官方QQ</p>
-								<div class="triangle"></div>
-								<p>空间总访问量<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">6930000+</span></p>
-								<p>湘大各类校园通知的<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">第一报道者</span></p>
-								<p>学习生活<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">必备</span>的贴心<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">“三姨妈”</span></p>
-							</div>
-							<img src="img5/arrow.png" id="five_arrow_2" onclick="return false" />
-							<div class="five_textthree">
-								<img src="img5/text.png" id="five_text_3" onclick="return false" />
-								<h4>怦然之间最悦声</h4>
-								<p>三翼出产的影音产品</p>
-								<div class="triangle"></div>
-								<p><span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">涵盖湘大万物</span>的声音与景象</p>
-								<p>视频累计播放量<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">150000+</span></p>
-								<p>音频累计收听量<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">38000+</span></p>
-							</div>
-						</div>
+						<img src="img5/light.png" id="five_light" onclick="return false"/>
+						<img src="img5/moon.png" id="five_moon" onclick="return false"/>
+						<img src="img5/ship.png" id="five_ship" onclick="return false"/>
+						<img src="img5/stone.png" id="five_stone" onclick="return false"/>
+						<img src="img5/wave.png" id="five_wave" onclick="return false"/> 
+						<img src="img5/dolphin.png" id="five_dolphin" onclick="return false"/>
+					</div>
+				</div>
+				<div class="five_wendang">
+					<div class="five_textone">
+						<img src="img5/text.png" id="five_text_1" onclick="return false"/>
+						<h4>山海之间最强音</h4>
+						<p>湘潭大学三翼校园</p>
+						<div class="triangle"></div>
+						<p>湘大<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">最具影响力</span>公众号</p>
+						<p>总阅读量<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">40000+</span></p>
+						<p>粉丝总数<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">100000+</span></p>
+						<p>荣获<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">湖南省青媒奖</span></p>
+					</div>
+					<img src="img5/arrow.png" id="five_arrow_1" onclick="return false"/>
+					<div class="five_texttwo">
+						<img src="img5/text.png" id="five_text_2" onclick="return false"/>
+						<h4>融会通浃最贴心</h4>
+						<p>三翼校园官方QQ</p>
+						<div class="triangle"></div>
+						<p>空间总访问量<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">6930000+</span></p>
+						<p>湘大各类校园通知的<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">第一报道者</span></p>
+						<p>学习生活<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">必备</span>的贴心<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">“三姨妈”</span></p>
+					</div>
+					<img src="img5/arrow.png" id="five_arrow_2" onclick="return false"/>
+					<div class="five_textthree">
+						<img src="img5/text.png" id="five_text_3" onclick="return false"/>
+						<h4>怦然之间最悦声</h4>
+						<p>三翼出产的影音产品</p>
+						<div class="triangle"></div>
+						<p><span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">涵盖湘大万物</span>的声音与景象</p>
+						<p>视频累计播放量<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">150000+</span></p>
+						<p>音频累计收听量<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">38000+</span></p>
 					</div>
 				</div>
 			</div>
-			<div class="section">
-				<div id="dowebok" style="height: 100vh;width: 164vh;">
-					<img src="img5/sea_night.png" id="demo" />
-				</div>
-				<p>这是最后一屏</p>
-			</div>
 		</div>
+	</div>
+	<div class="section">
+		<h3>第四屏</h3>
+		<p>这是最后一屏</p>
+	</div>
+</div>
 
-		<a href="http://www.dowebok.com/" style="display: none;">dowebok</a>
-		<a href="http://www.dowebok.com/77.html" style="display: none;">jQuery全屏滚动插件fullPage.js</a>
-		<script src="js5/pagefive.js"></script>
-		<script>
-			$(function() {
 
-				$('#fullpage').fullpage({
-					/*fullpage回调函数*/
-					afterLoad: function(anchorLink, index) {
-						if(index == 4) {
-							$.fn.fullpage.setAutoScrolling(false);
-						} else {
-							$.fn.fullpage.setAutoScrolling(true);
-						}
-					}
-				});
-			});
-		</script>
-	</body>
 
+
+
+
+
+
+
+
+
+<a href="http://www.dowebok.com/" style="display: none;">dowebok</a>
+<a href="http://www.dowebok.com/77.html" style="display: none;">jQuery全屏滚动插件fullPage.js</a>
+<script src="js5/pagefive.js"></script>
+</body>
 </html>
