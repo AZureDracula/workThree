@@ -43,6 +43,13 @@ img {
     position: absolute;
 }
 
+#first_moon{
+    position: absolute;
+    height: 5.075vh;
+    top: 12vh;
+    left: 80%;
+}
+
 #first_ship{
     height: 12vh;
     position: absolute;
@@ -210,7 +217,7 @@ img {
     z-index: 6;
 }
 
-#first_LOGO{
+/* #first_LOGO{
     position: absolute;
     height: 8vh;
     left: 54vw;
@@ -221,7 +228,7 @@ img {
     #first_LOGO{
         left: 64vw;
     }
-}
+} */
 
 #first_font{
     position: absolute;

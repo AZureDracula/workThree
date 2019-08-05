@@ -9,6 +9,16 @@ body {
     margin: 0;
 }
 
+@font-face{
+    font-family:zaozi;
+    src: url('../zaozi.otf');
+}
+
+@font-face{
+    font-family:zxf;
+    src: url('../zxf.ttf');
+}
+
 #pageThrid{
     width: 100%;
     height: 100%;
@@ -41,6 +51,7 @@ body {
     height: 100%;
     width: 164vh;
 }
+
 .pageThrid_box {
     top: 0;
     position: absolute;
@@ -102,26 +113,166 @@ body {
     left: 62.66%;
 }
 
-.wendang{
+.Thrid_wendang{
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
+    z-index: 2;
 }
 
-.textone, .texttwo, .textthree{
+.Thrid_textone, .Thrid_texttwo, .Thrid_textthree{
     position: absolute;
     width: -webkit-fill-available;
-    bottom: 62.85vh;
-    animation: ThridText 1.5s linear;
+    bottom: 10vh;
+    animation: ThridText 2s linear;
+    height: 51vh;
 }
 @keyframes ThridText{
     from{opacity: 0;}
     to{opacity: 1;}
 }
 
-.texttwo, .textthree{
+.Thrid_texttwo, .Thrid_textthree{
     display: none;
+}
+
+.Thrid_textone>h4{
+    position: absolute;
+    left: 9%;
+    top: 5%;
+    font-size: 5vh;
+    font-family: 'zaozi';
+    color: #475c7c;
+    font-weight: normal;
+}
+
+.Thrid_textone>p:nth-child(4){
+    position: absolute;
+    left: 8%;
+    top: 74%;
+    font-size: 2.2vh;
+    font-family: 'zxf';
+    color: #475c7c;
+}
+
+.Thrid_textone>p:nth-child(5){
+    position: absolute;
+    left: 8%;
+    top: 80%;
+    font-size: 2.2vh;
+    font-family: 'zxf';
+    color: #475c7c;
+}
+
+.Thrid_textone>p:nth-child(6){
+    position: absolute;
+    left: 8%;
+    top: 86%;
+    font-size: 2.2vh;
+    font-family: 'zxf';
+    color: #475c7c;
+}
+
+.Thrid_textone>p:nth-child(7){
+    position: absolute;
+    left: 8%;
+    top: 92%;
+    font-size: 2.2vh;
+    font-family: 'zxf';
+    color: #475c7c;
+}
+
+.Thrid_texttwo>h4{
+    position: absolute;
+    left: 40%;
+    top: 5%;
+    font-size: 5vh;
+    font-family: 'zaozi';
+    color: #475c7c;
+    font-weight: normal;
+}
+
+.Thrid_texttwo>p:nth-child(4){
+    position: absolute;
+    left: 42%;
+    top: 74%;
+    font-size: 2.2vh;
+    font-family: 'zxf';
+    color: #475c7c;
+}
+
+.Thrid_texttwo>p:nth-child(5){
+    position: absolute;
+    left: 42%;
+    top: 80%;
+    font-size: 2.2vh;
+    font-family: 'zxf';
+    color: #475c7c;
+}
+
+.Thrid_texttwo>p:nth-child(6){
+    position: absolute;
+    left: 42%;
+    top: 86%;
+    font-size: 2.2vh;
+    font-family: 'zxf';
+    color: #475c7c;
+}
+
+.Thrid_texttwo>p:nth-child(7){
+    position: absolute;
+    left: 42%;
+    top: 92%;
+    font-size: 2.2vh;
+    font-family: 'zxf';
+    color: #475c7c;
+}
+
+.Thrid_textthree>h4{
+    position: absolute;
+    left: 74%;
+    top: 5%;
+    font-size: 5vh;
+    font-family: 'zaozi';
+    color: #475c7c;
+    font-weight: normal;
+}
+
+.Thrid_textthree>p:nth-child(4){
+    position: absolute;
+    left: 76%;
+    top: 74%;
+    font-size: 2.2vh;
+    font-family: 'zxf';
+    color: #475c7c;
+}
+
+.Thrid_textthree>p:nth-child(5){
+    position: absolute;
+    left: 76%;
+    top: 80%;
+    font-size: 2.2vh;
+    font-family: 'zxf';
+    color: #475c7c;
+}
+
+.Thrid_textthree>p:nth-child(6){
+    position: absolute;
+    left: 76%;
+    top: 86%;
+    font-size: 2.2vh;
+    font-family: 'zxf';
+    color: #475c7c;
+}
+
+.Thrid_textthree>p:nth-child(7){
+    position: absolute;
+    left: 76%;
+    top: 92%;
+    font-size: 2.2vh;
+    font-family: 'zxf';
+    color: #475c7c;
 }
 
 #Thrid_arrow_1, #Thrid_arrow_2{
@@ -157,4 +308,34 @@ body {
 
 #Thrid_text_3{
     left: 69.70%;
+}
+
+.Thrid_photo{
+    height: 25.75vh;
+    width: 35.375vh;
+    position: absolute;
+    bottom: 15.05vh;
+    border-radius: 20px;
+    background: url(../img3/5.jpg);
+    border: 2px solid #ff7b8a;
+    background-size: 100% 100%;
+}
+
+.Thrid_textone>.Thrid_photo{
+    left: 6.5%;
+}
+
+.Thrid_texttwo>.Thrid_photo{
+    left: 39.5%;
+}
+
+.Thrid_textthree>.Thrid_photo{
+    left: 72.5%;
+}
+
+#Thrid_flower{
+    position: absolute;
+    height: 6vh;
+    bottom: -12px;
+    right: 4%;
 }

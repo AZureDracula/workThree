@@ -9,6 +9,16 @@ body {
     margin: 0;
 }
 
+@font-face{
+    font-family:zaozi;
+    src: url('../zaozi.otf');
+}
+
+@font-face{
+    font-family:zxf;
+    src: url('../zxf.ttf');
+}
+
 #pagefour{
     width: 100%;
     height: 100%;
@@ -60,19 +70,19 @@ body {
 
 #four_font{
     height:4.475vh;
-    top: 6vh;
-    left: 2.81%;
+    top: 8.1vh;
+    left: 3.73%;
 }
 
 #four_logo{
     height: 8.325vh;
-    top: 2.85vh;
-    left: 20.14%;
+    top: 5.75vh;
+    left: 21.14%;
 }
 
 #four_product{
     height: 5.2vh;
-    top: 13.75vh;
+    top: 15.75vh;
     left: 2.81%;
 }
 
@@ -152,13 +162,15 @@ body {
     width: 100%;
     height: 100%;
     top: 0;
+    z-index: 2;
 }
 
 .four_textone, .four_texttwo, .four_textthree{
     position: absolute;
     width: -webkit-fill-available;
-    bottom: 62.85vh;
+    bottom: 7vh;
     animation: fourText 1s linear;
+    height: 51vh;
 }
 @keyframes fourText{
     from{opacity: 0;}
@@ -167,6 +179,171 @@ body {
 
 .four_texttwo, .four_textthree{
     display: none;
+}
+
+.four_textone>h4{
+    position: absolute;
+    left: 6%;
+    top: 5%;
+    font-size: 5vh;
+    font-family: 'zaozi';
+    color: #475c7c;
+    font-weight: normal;
+}
+
+.four_textone>p:nth-child(5){
+    position: absolute;
+    left: 8%;
+    top: 22%;
+    font-size: 2.5vh;
+    font-family: 'zxf';
+    color: #475c7c;
+}
+
+.four_textone>p:nth-child(7){
+    position: absolute;
+    left: 8%;
+    top: 36%;
+    font-size: 2.5vh;
+    font-family: 'zxf';
+    color: #475c7c;
+}
+
+.four_textone>p:nth-child(9){
+    position: absolute;
+    left: 8%;
+    top: 49%;
+    font-size: 2.5vh;
+    font-family: 'zxf';
+    color: #475c7c;
+}
+
+.four_textone>p:nth-child(11){
+    position: absolute;
+    left: 8%;
+    top: 63%;
+    font-size: 2.5vh;
+    font-family: 'zxf';
+    color: #475c7c;
+}
+
+.four_textone>p:nth-child(13){
+    position: absolute;
+    left: 8%;
+    top: 77%;
+    font-size: 2.5vh;
+    font-family: 'zxf';
+    color: #475c7c;
+}
+
+.four_texttwo>h4{
+    position: absolute;
+    left:40%;
+    top: 5%;
+    font-size: 5vh;
+    font-family: 'zaozi';
+    color: #475c7c;
+    font-weight: normal;
+}
+
+.four_texttwo>p:nth-child(5){
+    position: absolute;
+    left: 42%;
+    top: 22%;
+    font-size: 2.5vh;
+    font-family: 'zxf';
+    color: #475c7c;
+}
+
+.four_texttwo>p:nth-child(7){
+    position: absolute;
+    left: 42%;
+    top: 36%;
+    font-size: 2.5vh;
+    font-family: 'zxf';
+    color: #475c7c;
+}
+
+.four_texttwo>p:nth-child(9){
+    position: absolute;
+    left: 42%;
+    top: 49%;
+    font-size: 2.5vh;
+    font-family: 'zxf';
+    color: #475c7c;
+}
+
+.four_texttwo>p:nth-child(11){
+    position: absolute;
+    left: 42%;
+    top: 63%;
+    font-size: 2.5vh;
+    font-family: 'zxf';
+    color: #475c7c;
+}
+
+.four_texttwo>p:nth-child(13){
+    position: absolute;
+    left: 42%;
+    top: 77%;
+    font-size: 2.5vh;
+    font-family: 'zxf';
+    color: #475c7c;
+}
+
+.four_textthree>h4{
+    position: absolute;
+    left:74%;
+    top: 5%;
+    font-size: 5vh;
+    font-family: 'zaozi';
+    color: #475c7c;
+    font-weight: normal;
+}
+
+.four_textthree>p:nth-child(5){
+    position: absolute;
+    left: 76%;
+    top: 22%;
+    font-size: 2.5vh;
+    font-family: 'zxf';
+    color: #475c7c;
+}
+
+.four_textthree>p:nth-child(7){
+    position: absolute;
+    left: 76%;
+    top: 36%;
+    font-size: 2.5vh;
+    font-family: 'zxf';
+    color: #475c7c;
+}
+
+.four_textthree>p:nth-child(9){
+    position: absolute;
+    left: 76%;
+    top: 49%;
+    font-size: 2.5vh;
+    font-family: 'zxf';
+    color: #475c7c;
+}
+
+.four_textthree>p:nth-child(11){
+    position: absolute;
+    left: 76%;
+    top: 63%;
+    font-size: 2.5vh;
+    font-family: 'zxf';
+    color: #475c7c;
+}
+
+.four_textthree>p:nth-child(13){
+    position: absolute;
+    left: 76%;
+    top: 77%;
+    font-size: 2.5vh;
+    font-family: 'zxf';
+    color: #475c7c;
 }
 
 #four_arrow_1, #four_arrow_2{
@@ -202,4 +379,110 @@ body {
 
 #four_text_3{
     left: 69.70%;
+}
+
+
+/*虚线*/
+#four_line{
+    height: 0.425vh;
+    position: absolute;
+    top: 17%;
+}
+
+.four_textone>#four_line{
+    left: 6%;
+}
+
+.four_texttwo>#four_line{
+    left: 40%;
+}
+
+.four_textthree>#four_line{
+    left: 74%;
+}
+
+
+/*原点*/
+#circle{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #475c7c;
+
+}
+
+.four_textone>.circle1{
+    left: 6%;
+    top: 24%;
+}
+
+.four_textone>.circle2{
+    left: 6%;
+    top: 39%;
+}
+
+.four_textone>.circle3{
+    left: 6%;
+    top: 52%;
+}
+
+.four_textone>.circle4{
+    left: 6%;
+    top: 66%;
+}
+
+.four_textone>.circle5{
+    left: 6%;
+    top: 79%;
+}
+
+.four_texttwo>.circle1{
+    left: 40%;
+    top: 24%;
+}
+
+.four_texttwo>.circle2{
+    left: 40%;
+    top: 39%;
+}
+
+.four_texttwo>.circle3{
+    left: 40%;
+    top: 52%;
+}
+
+.four_texttwo>.circle4{
+    left: 40%;
+    top: 66%;
+}
+
+.four_texttwo>.circle5{
+    left: 40%;
+    top: 79%;
+}
+
+.four_textthree>.circle1{
+    left: 74%;
+    top: 24%;
+}
+
+.four_textthree>.circle2{
+    left: 74%;
+    top: 39%;
+}
+
+.four_textthree>.circle3{
+    left: 74%;
+    top: 52%;
+}
+
+.four_textthree>.circle4{
+    left: 74%;
+    top: 66%;
+}
+
+.four_textthree>.circle5{
+    left: 74%;
+    top: 79%;
 }
