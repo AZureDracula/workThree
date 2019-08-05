@@ -11,11 +11,16 @@
 		<link rel="stylesheet" href="css2/pageTwo.css" />
 		<link rel="stylesheet" href="css2/pageTwo_donghua.css" />
 		<link rel="stylesheet" href="css/star.css" />
-		<link rel="stylesheet" href="css3/pageThree.css" />
-		<link rel="stylesheet" href="css4/pageFour.css" />
-		<link rel="stylesheet" href="css5/pageFive.css" />
-		<link rel="stylesheet" href="css4/translateelement.css">
-		<link rel="stylesheet" href="css4/swiper.min.css">
+		<link rel="stylesheet" href="css3/Thrid.css" />
+		<link rel="stylesheet" href="css3/star.css">
+		<link rel="stylesheet" href="css4/four.css">
+		<link rel="stylesheet" href="css4/four_star.css">
+		<link rel="stylesheet" href="css5/pageFive.css">
+		<link rel="stylesheet" href="css5/five_star.css">
+		<link rel="stylesheet" href="css6/swiper.min.css" />
+		<!--<link rel="stylesheet" href="css6/translateelement.css" />-->
+		<link rel="stylesheet" href="css6/pageSix.css" />
+
 		<style>
 			* {
 				margin: 0px;
@@ -29,22 +34,31 @@
 				height: 100%;
 				overflow: hidden;
 				touch-action: none;
+				/*-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;*/
 			}
 			
 			h1 {
 				font-size: 100px;
 			}
+			
+			
 		</style>
 	</head>
 
 	<body>
-		<img class="bottomArrow" src="img/jiantou.png" onclick="bottomEffect()" />
+
+		<img id="bottomArrow" class="bottomArrow" src="img/jiantou.png" onclick="bottomEffect()" />
+
 		<div id="allpage" style="transform:  translateY(0%);">
 
 			<div class="bigPage first_page" id="first_page">
 				<div id="first_page_bg">
 					<img onclick="return false;" src="first_img/sky.png" id="first_sky">
 					<img onclick="return false;" src="first_img/sea_mount.png" id="first_sea_mount">
+					<img onclick="return false;" src="first_img/moon.png" id="first_moon">
 					<img onclick="return false;" src="first_img/ship.png" id="first_ship">
 					<img onclick="return false;" src="first_img/front_mount.png" id="first_front_mount">
 					<img onclick="return false;" src="first_img/cloud_left.png" id="first_cloud_left">
@@ -54,31 +68,17 @@
 					<img onclick="return false;" src="first_img/wave_1.png" id="first_wave_1">
 					<img onclick="return false;" src="first_img/wave_2.png" id="first_wave_2">
 					<img onclick="return false;" src="first_img/big_title.png" id="first_big_title">
-					<img onclick="return false;" src="first_img/LOGO.png" id="first_LOGO">
+					<!-- <img onclick="return false;" src="first_img/LOGO.png" id="first_LOGO"> -->
 					<img onclick="return false;" src="first_img/font.png" id="first_font">
-					<div class="first_page_button" id="first_page_button_1">
+					<div onclick="bumen()" class="first_page_button" id="first_page_button_1">
 						<img onclick="return false;" src="first_img/button.png" id="first_button">
 						<p>翼部门</p>
 					</div>
-					<div class="first_page_button" id="first_page_button_2">
+					<a href="https://azuredracula.github.io/workThree/sshiiiit/inquiry.html" target="_blank" class="first_page_button" id="first_page_button_2">
 						<img onclick="return false;" src="first_img/button.png" id="first_button">
 						<p>录取查询</p>
-					</div>
+					</a>
 				</div>
-				<!--            以下是流星                                    -->
-				<div class="meteor-body">
-					<div class="main-con">
-						<div class="shooting_star"></div>
-						<div class="shooting_star"></div>
-						<div class="shooting_star"></div>
-						<div class="shooting_star"></div>
-						<div class="shooting_star"></div>
-						<div class="shooting_star"></div>
-						<div class="shooting_star"></div>
-					</div>
-				</div>
-				<!--            以上是流星                                    -->
-
 			</div>
 			<div class="bigPage" id="pageTwo" style=" text-align: center;">
 				<div id="pageTwoBox">
@@ -90,28 +90,16 @@
 						<div id="pageTwoHeadLogo"></div>
 					</div>
 					<div id="pageTwoCenterOne">
-						<!--<div id="pageTwoCenterOneLeftBig">-->
 						<div id="pageTwoCenterOneLeft"></div>
-						<!--</div>-->
-						<!--<div id="pageTwoCenterOneRightBig">-->
 						<div id="pageTwoCenterOneRight"></div>
-						<!--</div>-->
 					</div>
 					<div id="pageTwoCenterTwo">
-						<!--<div id="pageTwoCenterTwoLeftBig">-->
 						<div id="pageTwoCenterTwoLeft"></div>
-						<!--</div>-->
-						<!--<div id="pageTwoCenterTwoRightBig">-->
 						<div id="pageTwoCenterTwoRight"></div>
-						<!--</div>-->
 					</div>
 					<div id="pageTwoCenterThree">
-						<!--<div id="pageTwoCenterThreeLeftBig">-->
 						<div id="pageTwoCenterThreeLeft"></div>
-						<!--</div>-->
-						<!--<div id="pageTwoCenterThreeRightBig">-->
 						<div id="pageTwoCenterThreeRight"></div>
-						<!--</div>-->
 					</div>
 					<div id="pageTwolang"></div>
 					<div class="meteor-body">
@@ -128,157 +116,324 @@
 				</div>
 
 			</div>
-			<div class="bigPage" id="pageThree"></div>
+			<div class="bigPage" id="pageThree">
+				<div class="pageThrid" id="pageThrid">
+					<div class="zhanwei">
+						<div id="Thrid_bg"></div>
+						<div class="Thrid_meteor-body">
+							<div class="Thrid_main-con">
+								<div class="Thrid_shooting_star"></div>
+								<div class="Thrid_shooting_star"></div>
+								<div class="Thrid_shooting_star"></div>
+								<div class="Thrid_shooting_star"></div>
+								<div class="Thrid_shooting_star"></div>
+								<div class="Thrid_shooting_star"></div>
+								<div class="Thrid_shooting_star"></div>
+							</div>
+						</div>
+						<div class="shicha">
+							<div class="pageThrid_box">
+								<div class="Thrid_font">
+									<img src="img3/FONT.png" id="Thrid_font" onclick="return false"/>
+									<img src="img3/LOGO.png" id="Thrid_logo" onclick="return false"/>
+									<img src="img3/MANAGE.png" id="Thrid_manage" onclick="return false"/>
+								</div>
+								<img src="img3/big_moon.png" id="Thrid_moon" onclick="return false"/>
+								<img src="img3/behind_hill.png" id="Thrid_behind_hill" onclick="return false"/>
+								<img src="img3/front_hill.png" id="Thrid_front_hill" onclick="return false"/>
+								<img src="img3/dear.png" id="Thrid_dear" onclick="return false"/>
+							</div>
+						</div>
+						<div class="Thrid_wendang">
+							<div class="Thrid_textone">
+								<img src="img3/text.png" id="Thrid_text_1" onclick="return false"/>
+								<h4>迷你马拉松</h4>
+								<div class="Thrid_photo">
+									<img src="img3/flower.png" id="Thrid_flower" onclick="return false"/>
+								</div>
+								<p>一场激情四射的环校跑，</p>
+								<p>全校参与，形式多样。</p>
+								<p>用荧光夜跑的方式，</p>
+								<p>来表达内心的兴奋与喜悦</p>
+							</div>
+							<img src="img3/arrow.png" id="Thrid_arrow_1" onclick="return false"/>
+							<div class="Thrid_texttwo">
+								<img src="img3/text.png" id="Thrid_text_2" onclick="return false"/>
+								<h4>五四风雨人生路</h4>
+								<div class="Thrid_photo">
+									<img src="img3/flower.png" id="Thrid_flower" onclick="return false"/>
+								</div>
+								<p>一次机缘巧合的相遇与相识，</p>
+								<p>一场同伴与同伴的相互考验，</p>
+								<p>一回变化莫测的三人行，</p>
+								<p>用自己的方式，宣扬五四。</p>
+							</div>
+							<img src="img3/arrow.png" id="Thrid_arrow_2" onclick="return false"/>
+							<div class="Thrid_textthree">
+								<img src="img3/text.png" id="Thrid_text_3" onclick="return false"/>
+								<h4>三翼月度大会</h4>
+								<div class="Thrid_photo">
+									<img src="img3/flower.png" id="Thrid_flower" onclick="return false"/>
+								</div>
+								<p>月度总结，集体小游戏</p>
+								<p>一月一次的聚集，</p>
+								<p>激情、欢笑与感动，</p>
+								<p>一同感受翼家人的温暖。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="bigPage" id="pageFour">
-				<div class="pageFourTitle bounceDown" id="pageFourTitleOne"></div>
-				<div class="pageFourTitle bounceUp" id="pageFourTitleTwo"></div>
-				<div class="pageFourTitle bounceUp" id="pageFourTitleThree"></div>
+				<div class="pagefour" id="pagefour">
+					<div class="zhanwei">
+						<div id="four_sky"></div>
+						<div class="four_meteor-body">
+							<div class="four_main-con">
+								<div class="four_shooting_star"></div>
+								<div class="four_shooting_star"></div>
+								<div class="four_shooting_star"></div>
+								<div class="four_shooting_star"></div>
+								<div class="four_shooting_star"></div>
+								<div class="four_shooting_star"></div>
+								<div class="four_shooting_star"></div>
+							</div>
+						</div>
+						<div class="shicha">
+							<div class="pagefour_box">
+								<div class="Four_font">
+									<img src="img4/font.png" id="four_font" onclick="return false"/>
+									<img src="img4/LOGO.png" id="four_logo" onclick="return false"/>
+									<img src="img4/product.png" id="four_product" onclick="return false"/>
+								</div>
+								<img src="img4/moon.png" id="four_moon" onclick="return false"/>
+								<img src="img4/mount.png" id="four_mount" onclick="return false"/>
+								<img src="img4/behind.png" id="four_behind" onclick="return false"/>
+								<img src="img4/cloud_up.png" id="four_cloud_up" onclick="return false"/>
+								<img src="img4/cloud_down.png" id="four_cloud_down" onclick="return false"/>
+								<img src="img4/front.png" id="four_front" onclick="return false"/>
+							</div>
+						</div>
+						<div class="four_wendang">
+							<div class="four_textone">
+								<img src="img4/text.png" id="four_text_1" onclick="return false"/>
+								<h4>拱拱APP</h4>
+								<img src="img4/line.png" id="four_line" onclick="return false"/>
+								<span class="circle1" id="circle"></span><p><span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">看课表</span>，考试安排,失物招领</p>
+								<span class="circle2" id="circle"></span><p>湘大人自己的<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">校园APP</span></p>
+								<span class="circle3" id="circle"></span><p>让校园生活变得更加<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">方便</span></p>
+								<span class="circle4" id="circle"></span><p><span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">三翼工作室</span>的集大成之作</p>
+								<span class="circle5" id="circle"></span><p>更多功能等你来发现！</p>
+							</div>
+							<img src="img4/arrow.png" id="four_arrow_1" onclick="return false"/>
+							<div class="four_texttwo">
+								<img src="img4/text.png" id="four_text_2" onclick="return false"/>
+								<h4>湘大二手街</h4>
+								<img src="img4/line.png" id="four_line" onclick="return false"/>
+								<span class="circle1" id="circle"></span><p>全新太贵？去<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">二手街</span>淘一淘</p>
+								<span class="circle2" id="circle"></span><p>专业资料，生活用品</p>
+								<span class="circle3" id="circle"></span><p>古怪小玩意，满足<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">好奇心</span></p>
+								<span class="circle4" id="circle"></span><p>上二手街，<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">淘我所想</span></p>
+								<span class="circle5" id="circle"></span><p><span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">学生党</span>要啥自行车</p>
+							</div>
+							<img src="img4/arrow.png" id="four_arrow_2" onclick="return false"/>
+							<div class="four_textthree">
+								<img src="img4/text.png" id="four_text_3" onclick="return false"/>
+								<h4>湘大文库</h4>
+								<img src="img4/line.png" id="four_line" onclick="return false"/>
+								<span class="circle1" id="circle"></span><p>授课ppt，实验报告，往届试卷</p>
+								<span class="circle2" id="circle"></span><p>上传<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">资料</span>，交流讨论</p>
+								<span class="circle3" id="circle"></span><p>开启你的<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">dalao</span>之旅</p>
+								<span class="circle4" id="circle"></span><p>湘大学子的<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">“必备良药”</span></p>
+								<span class="circle5" id="circle"></span><p>满足你的<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">学习</span>需求</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bigPage" id="pageFive">
+				<div class="pageFifth" id="pageFive_2">
+					<div class="zhanwei" >
+						<div id="Five_bg"></div>
+						<div class="shicha">
+							<div class="pagefive_box">
+								<div class="five_font">
+									<img src="img5/FONT.png" id="five_font" onclick="return false"/>
+									<img src="img5/LOGO.png" id="five_logo" onclick="return false"/>
+									<img src="img5/media.png" id="five_media" onclick="return false"/>
+								</div>
+								<img src="img5/light.png" id="five_light" onclick="return false"/>
+								<img src="img5/moon.png" id="five_moon" onclick="return false"/>
+								<img src="img5/ship.png" id="five_ship" onclick="return false"/>
+								<img src="img5/stone.png" id="five_stone" onclick="return false"/>
+								<img src="img5/wave.png" id="five_wave" onclick="return false"/> 
+								<img src="img5/dolphin.png" id="five_dolphin" onclick="return false"/>
+							</div>
+						</div>
+						<div class="five_wendang">
+							<div class="five_textone">
+								<img src="img5/text.png" id="five_text_1" onclick="return false"/>
+								<h4>山海之间最强音</h4>
+								<p>湘潭大学三翼校园</p>
+								<div class="triangle"></div>
+								<p>湘大<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">最具影响力</span>公众号</p>
+								<p>总阅读量<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">40000+</span></p>
+								<p>粉丝总数<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">100000+</span></p>
+								<p>荣获<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">湖南省青媒奖</span></p>
+							</div>
+							<img src="img5/arrow.png" id="five_arrow_1" onclick="return false"/>
+							<div class="five_texttwo">
+								<img src="img5/text.png" id="five_text_2" onclick="return false"/>
+								<h4>融会通浃最贴心</h4>
+								<p>三翼校园官方QQ</p>
+								<div class="triangle"></div>
+								<p>空间总访问量<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">6930000+</span></p>
+								<p>湘大各类校园通知的<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">第一报道者</span></p>
+								<p>学习生活<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">必备</span>的贴心<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">“三姨妈”</span></p>
+							</div>
+							<img src="img5/arrow.png" id="five_arrow_2" onclick="return false"/>
+							<div class="five_textthree">
+								<img src="img5/text.png" id="five_text_3" onclick="return false"/>
+								<h4>怦然之间最悦声</h4>
+								<p>三翼出产的影音产品</p>
+								<div class="triangle"></div>
+								<p><span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">涵盖湘大万物</span>的声音与景象</p>
+								<p>视频累计播放量<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">150000+</span></p>
+								<p>音频累计收听量<span style="font-size: 3vh;font-family: 'zaozi';color: #475c7c;">38000+</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-----     下面是部门介绍     ----->
+			<div class="bigPage pageSixBgOne" id="pageSix">
+				<div class="pageSixTitle bounceDown" id="pageSixTitleOne"></div>
+				<div class="pageSixTitle bounceUp" id="pageSixTitleTwo"></div>
+				<div class="pageSixTitle bounceUp" id="pageSixTitleThree"></div>
+
+				<!-------------------------上面是中心-------------------------->
 
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<img style="width: 45.83vw;" src="img4/PFImgOne.png" />
+							<img onclick="return false" style="width: 45.83vw;" src="img6/pageSixImgOne.png" />
 						</div>
-						<div class="swiper-slide" id="pageFourImgOTwo">
-							<img style="width: 45.83vw;" src="img4/PFImgTwo.png" />
+						<div class="swiper-slide">
+							<img onclick="return false" style="width: 45.83vw;" src="img6/pageSixImgTwo.png" />
 						</div>
-						<div class="swiper-slide" id="pageFourImgThree">
-							<img style="width: 45.83vw;" src="img4/PFImgThree.png" />
+						<div class="swiper-slide">
+							<img onclick="return false" style="width: 45.83vw;" src="img6/pageSixImgThree.png" />
 						</div>
-						<div class="swiper-slide" id="pageFourImgFour">
-							<img style="width: 45.83vw;" src="img4/PFImgFour.png" />
+						<div class="swiper-slide">
+							<img onclick="return false" style="width: 45.83vw;" src="img6/pageSixImgFour.png" />
 						</div>
-						<div class="swiper-slide" id="pageFourImgFive">
-							<img style="width: 45.83vw;" src="img4/PFImgFive.png" />
+						<div class="swiper-slide">
+							<img onclick="return false" style="width: 45.83vw;" src="img6/pageSixImgFive.png" />
 						</div>
-						<div class="swiper-slide" id="pageFourImgSix">
-							<img style="width: 45.83vw;" src="img4/PFImgSix.png" />
+						<div class="swiper-slide">
+							<img onclick="return false" style="width: 45.83vw;" src="img6/pageSixImgSix.png" />
 						</div>
-						<div class="swiper-slide" id="pageFourImgSeven">
-							<img style="width: 45.83vw;" src="img4/PFImgSeven.png" />
+						<div class="swiper-slide">
+							<img onclick="return false" style="width: 45.83vw;" src="img6/pageSixImgSeven.png" />
 						</div>
-						<div class="swiper-slide" id="pageFourImgEight">
-							<img style="width: 45.83vw;" src="img4/PFImgEight.png" />
+						<div class="swiper-slide">
+							<img onclick="return false" style="width: 45.83vw;" src="img6/pageSixImgEight.png" />
 						</div>
-						<div class="swiper-slide" id="pageFourImgNine">
-							<img style="width: 45.83vw;" src="img4/PFImgNine.png" />
+						<div class="swiper-slide">
+							<img onclick="return false" style="width: 45.83vw;" src="img6/pageSixImgNine.png" />
 						</div>
 					</div>
 				</div>
 
-			</div>
-			<div class="bigPage" id="pageFive">
-				<div class="pageFour" id="pageFive_2">
-					<div style="position: relative; height: 100%; overflow: hidden; width: 165vh">
-						<img src="img5/sea_night.png" id="Four_sea_night" />
-					</div>
-					<!--占位-->
-					<div style="top: 0; position: absolute; overflow: hidden; height: 100%; width: 165vh">
-						<!--视口-->
-						<div class="pageFour_box">
-							<!--视差元素-->
-							<div class="p">
-								<p>行政管理中心</p>
-							</div>
-							<img src="img5/light.png" id="Four_light" onclick="return false" />
-							<img src="img5/moon.png" id="Four_moon" onclick="return false" />
-							<img src="img5/ship.png" id="Four_ship" onclick="return false" />
-							<img src="img5/stone.png" id="Four_stone" onclick="return false" />
-							<img src="img5/wave.png" id="Four_wave" onclick="return false" />
-							<img src="img5/dolphin.png" id="Four_dolphin" onclick="return false" />
-						</div>
-					</div>
+				<!--------------------------------------------------->
+				<div class="pageSixBoard bounceOn" id="pageSixBoardOne">
+					<p class="pageSixLineOne PSCenterOne">产品经理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1/4</p>
+					<p class="pageSixLineTwo PSCenterOne">PM</p>
+					<p class="pageSixLineThree"><span class="pageSixSoild" style="color: #F47382;">•</span>&nbsp;&nbsp;洞悉人类需求，完成需求分析</p>
+					<p class="pageSixLineThree"><span class="pageSixSoild" style="color: #F47382;">•</span>&nbsp;&nbsp;设计产品功能，绘制产品原型</p>
+					<p class="pageSixLineThree"><span class="pageSixSoild" style="color: #F47382;">•</span>&nbsp;&nbsp;使产品完成理想走向现实的进阶</p>
 				</div>
-			</div>
-			<div class="bigPage" id="pageSix">
-				<h1>6</h1></div>
-			<div class="bigPage" id="pageSeven">
-				<h1>7</h1></div>
-			<div class="bigPage" id="pageEight">
-				<h1>8</h1></div>
-			<div class="bigPage" id="pageNine">
-				<h1>9</h1></div>
+				<div class="pageSixBoard bounceOff" id="pageSixBoardTwo">
+					<p class="pageSixLineOne PSCenterOne">产品运营部&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2/4</p>
+					<p class="pageSixLineTwo PSCenterOne">OPERATION</p>
+					<p class="pageSixLineThree"><span class="pageSixSoild" style="color: #F47382;">•</span>&nbsp;&nbsp;探索人性，追寻生存秘籍</p>
+					<p class="pageSixLineThree"><span class="pageSixSoild" style="color: #F47382;">•</span>&nbsp;&nbsp;有着独特的产品思维</p>
+					<p class="pageSixLineThree"><span class="pageSixSoild" style="color: #F47382;">•</span>&nbsp;&nbsp;凭借数据、活动和文案技能<br/>&nbsp;&nbsp;&nbsp;&nbsp;成为产品的专属抚养者</p>
+				</div>
+				<div class="pageSixBoard bounceOff" id="pageSixBoardThree">
+					<p class="pageSixLineOne PSCenterOne">技术开发部&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3/4</p>
+					<p class="pageSixLineTwo PSCenterOne">TECHNOLOGY</p>
+					<p class="pageSixLineThree"><span class="pageSixSoild" style="color: #F47382;">•</span>&nbsp;&nbsp;以键盘为琴，以代码为乐</p>
+					<p class="pageSixLineThree"><span class="pageSixSoild" style="color: #F47382;">•</span>&nbsp;&nbsp;演奏出家族的独特产品程序乐章</p>
+					<p class="pageSixLineThree"><span class="pageSixSoild" style="color: #F47382;">•</span>&nbsp;&nbsp;消灭隐藏bug，维护虚拟世界和平</p>
+				</div>
+				<div class="pageSixBoard bounceOff" id="pageSixBoardFour">
+					<p class="pageSixLineOne PSCenterOne">设计部&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4/4</p>
+					<p class="pageSixLineTwo PSCenterOne">DESIGN</p>
+					<p class="pageSixLineThree"><span class="pageSixSoild" style="color: #F47382;">•</span>&nbsp;&nbsp;翱翔自然与美的世界</p>
+					<p class="pageSixLineThree"><span class="pageSixSoild" style="color: #F47382;">•</span>&nbsp;&nbsp;产品网页游戏的专属化妆师</p>
+					<p class="pageSixLineThree"><span class="pageSixSoild" style="color: #F47382;">•</span>&nbsp;&nbsp;独具匠心，创造出奇特的UI界面<br/>&nbsp;&nbsp;&nbsp;&nbsp;与平面制品</p>
+				</div>
+				<div class="pageSixBoard bounceOff" id="pageSixBoardFive">
+					<p class="pageSixLineOne PSCenterTwo">行政人事部&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1/2</p>
+					<p class="pageSixLineTwo PSCenterTwo">PERSONNEL</p>
+					<p class="pageSixLineThree"><span class="pageSixSoild" style="color: #6F6791;">•</span>&nbsp;&nbsp;精通大千世界的规则</p>
+					<p class="pageSixLineThree"><span class="pageSixSoild" style="color: #6F6791;">•</span>&nbsp;&nbsp;财务人员小管家</p>
+					<p class="pageSixLineThree"><span class="pageSixSoild" style="color: #6F6791;">•</span>&nbsp;&nbsp;传达信息，建设家族</p>
+				</div>
+				<div class="pageSixBoard bounceOff" id="pageSixBoardSix">
+					<p class="pageSixLineOne PSCenterTwo">企划公关部&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2/2</p>
+					<p class="pageSixLineTwo PSCenterTwo">PLANNING</p>
+					<p class="pageSixLineThree"><span class="pageSixSoild" style="color: #6F6791;">•</span>&nbsp;&nbsp;对外界敏锐度极强</p>
+					<p class="pageSixLineThree"><span class="pageSixSoild" style="color: #6F6791;">•</span>&nbsp;&nbsp;会玩敢想，天然的策划头脑</p>
+					<p class="pageSixLineThree"><span class="pageSixSoild" style="color: #6F6791;">•</span>&nbsp;&nbsp;上得了公关外联，<br/>&nbsp;&nbsp;&nbsp;&nbsp;下得了礼仪策划</p>
+				</div>
+				<div class="pageSixBoard bounceOff" id="pageSixBoardSeven">
+					<p class="pageSixLineOne PSCenterThree">多媒体事业部&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1/3</p>
+					<p class="pageSixLineTwo PSCenterThree">MULTIMEDIA</p>
+					<p class="pageSixLineThree"><span class="pageSixSoild" style="color: #708EC3;">•</span>&nbsp;&nbsp;擅长记录精彩瞬间</p>
+					<p class="pageSixLineThree"><span class="pageSixSoild" style="color: #708EC3;">•</span>&nbsp;&nbsp;描绘光与影的剪辑艺术</p>
+					<p class="pageSixLineThree"><span class="pageSixSoild" style="color: #708EC3;">•</span>&nbsp;&nbsp;在美妙声中与时空擦出<br/>&nbsp;&nbsp;&nbsp;&nbsp;动人的火花</p>
+				</div>
+				<div class="pageSixBoard bounceOff" id="pageSixBoardEight">
+					<p class="pageSixLineOne PSCenterThree">新媒体运营部&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2/3</p>
+					<p class="pageSixLineTwo PSCenterThree">NEW&nbsp;MEDIA</p>
+					<p class="pageSixLineThree"><span class="pageSixSoild" style="color: #708EC3;">•</span>&nbsp;&nbsp;超强的热点捕获技能</p>
+					<p class="pageSixLineThree"><span class="pageSixSoild" style="color: #708EC3;">•</span>&nbsp;&nbsp;擅长以文击人、以图诱人</p>
+					<p class="pageSixLineThree"><span class="pageSixSoild" style="color: #708EC3;">•</span>&nbsp;&nbsp;主攻各大区域的信息传播</p>
+				</div>
+				<div class="pageSixBoard bounceOff" id="pageSixBoardNine">
+					<p class="pageSixLineOne PSCenterThree">新闻通讯社&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3/3</p>
+					<p class="pageSixLineTwo PSCenterThree">NEW&nbsp;SAGENCY</p>
+					<p class="pageSixLineThree"><span class="pageSixSoild" style="color: #708EC3;">•</span>&nbsp;&nbsp;访名人，写新闻</p>
+					<p class="pageSixLineThree"><span class="pageSixSoild" style="color: #708EC3;">•</span>&nbsp;&nbsp;洞察力强，能迅速捕获新闻动态</p>
+					<p class="pageSixLineThree"><span class="pageSixSoild" style="color: #708EC3;">•</span>&nbsp;&nbsp;常出现在各大晚会VIP席坐</p>
+				</div>
+				<!--------------------------------------------------->
+				<a id="pageSixButton" href="https://azuredracula.github.io/workThree/sshiiiit/index.html" target="_blank"></a>
 
+			</div>
+			<!-----     上面是部门介绍     ----->
 		</div>
-		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<!--		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>-->
 		<script type="text/javascript" src="js/stepMove.js"></script>
-		<script type="text/javascript" src="js4/testFour.js"></script>
-		<script type="text/javascript" src="js5/pageFive.js"></script>
-		<script type="text/javascript" src="js4/swiper.min.js"></script>
+		<script type="text/javascript" src="js3/pageThree.js"></script>
+		<script type="text/javascript" src="js4/pagefour.js"></script>
+		<script type="text/javascript" src="js5/pagefive.js"></script>
+		<script type="text/javascript" src="js6/swiper.min.js"></script>
+		<script type="text/javascript" src="js6/pageSix.js"></script>
+		
+		
 		<script>
-			var mySwiper = new Swiper('.swiper-container', {
-				slidesPerView: 2,
-
-				watchSlidesProgress: true,
-				slideToClickedSlide: true,
-				centeredSlides: true,
-				loop: false,
-
-				on: {
-					slideChange: function() {
-						console.log(this.activeIndex);
-						if(this.activeIndex % 9 == 0) {
-							console.log("产品经理： 舒");
-						} else if(this.activeIndex % 9 == 1) {
-							console.log("产品运营： 狡");
-						} else if(this.activeIndex % 9 == 2) {
-							console.log("技术       ： 狰");
-						} else if(this.activeIndex % 9 == 3) {
-							console.log("设计       ： 撇");
-						} else if(this.activeIndex % 9 == 4) {
-							console.log("行政人事： 夫诸");
-						} else if(this.activeIndex % 9 == 5) {
-							console.log("企划公关： 狂鸟");
-						} else if(this.activeIndex % 9 == 6) {
-							console.log("多媒体    ： 驺吾");
-						} else if(this.activeIndex % 9 == 7) {
-							console.log("新媒体    ： 桐桐");
-						} else if(this.activeIndex % 9 == 8) {
-							console.log("通讯社    ： 毕方");
-						};
-
-						if(this.activeIndex % 9 >= 0 && this.activeIndex % 9 <= 3) {
-							console.log("0-3");
-
-							$("#pageFourTitleOne").removeClass("bounceUp");
-							$("#pageFourTitleOne").addClass("bounceDown");
-
-							$("#pageFourTitleTwo").removeClass("bounceDown");
-							$("#pageFourTitleTwo").addClass("bounceUp");
-
-							$("#pageFourTitleThree").removeClass("bounceDown");
-							$("#pageFourTitleThree").addClass("bounceUp");
-
-						} else if(this.activeIndex % 9 > 3 && this.activeIndex % 9 <= 5) {
-							console.log("4-5");
-
-							$("#pageFourTitleOne").removeClass("bounceDown");
-							$("#pageFourTitleOne").addClass("bounceUp");
-
-							$("#pageFourTitleThree").removeClass("bounceDown");
-							$("#pageFourTitleThree").addClass("bounceUp");
-
-							$("#pageFourTitleTwo").removeClass("bounceUp");
-							$("#pageFourTitleTwo").addClass("bounceDown");
-
-						} else if(this.activeIndex % 9 > 5 && this.activeIndex % 9 <= 8) {
-							console.log("6-8");
-							$("#pageFourTitleOne").removeClass("bounceDown");
-							$("#pageFourTitleOne").addClass("bounceUp");
-
-							$("#pageFourTitleTwo").removeClass("bounceDown");
-							$("#pageFourTitleTwo").addClass("bounceUp");
-
-							$("#pageFourTitleThree").removeClass("bounceUp");
-							$("#pageFourTitleThree").addClass("bounceDown");
-						};
-					},
-				},
-
-				//spaceBetween: "8%",
-				//spaceBetween : '10%',按container的百分比
-			});
+			
+//			document.querySelector('body').addEventListener('touchmove', function(e) {
+//				e.preventDefault();
+//			})
+		
 		</script>
+		
+		
 	</body>
 
 </html>
