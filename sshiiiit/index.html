@@ -269,7 +269,7 @@
 						console.log(data.message);
 						if(data.code == 0) {
 							alert("报名表提交成功！");
-							window.location.reload();
+							window.location.href = "inquiry.html";
 							//								sessionStorage.obj = JSON.stringify(data);
 							//								console.log(sessionStorage.obj);
 						} else if(data.code == 1) {

@@ -270,7 +270,7 @@ body:before {
 }
 
 .shooting_star:nth-child(1) {
-	top: -7%;
+	top: 11%;
 	left: 5%;
 	-webkit-animation-delay: 500ms;
 	animation-delay: 500ms;
@@ -302,7 +302,7 @@ body:before {
 }
 
 .shooting_star:nth-child(5) {
-	top: 55%;
+	top: 17%;
 	left: 45%;
 	-webkit-transform: scale(0.5);
 	transform: scale(0.5);
@@ -311,7 +311,7 @@ body:before {
 }
 
 .shooting_star:nth-child(6) {
-	top: 65%;
+	top: 25%;
 	left: 75%;
 	-webkit-transform: scale(0.7);
 	transform: scale(0.7);
@@ -320,7 +320,7 @@ body:before {
 }
 
 .shooting_star:nth-child(7) {
-	top: 45%;
+	top: 33%;
 	left: 5%;
 	-webkit-transform: scale(0.7);
 	transform: scale(0.7);
