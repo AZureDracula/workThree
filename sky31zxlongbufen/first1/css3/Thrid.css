@@ -1,0 +1,196 @@
+html,
+body {
+    height: 100%;
+}
+
+* {
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+#pageThrid{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: auto;
+}
+
+.zhanwei{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    width: 164vh;
+}
+#Thrid_bg{
+    /* position: absolute;
+    height: 100%;
+    width: auto;
+    left: 0; */
+    width: 100%;
+    height: 100vh;
+    background: url("../img3/mount_bg.png");
+    background-size: 100% 100%;
+    z-index: -5;
+}
+
+.shicha{
+    top: 0;
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 164vh;
+}
+
+.pageThrid_box {
+    top: 0;
+    position: absolute;
+    overflow-y: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.Thrid_font{
+    height: 17.75vh;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+}
+
+#Thrid_font, #Thrid_logo, #Thrid_manage{
+    position: absolute;
+}
+
+#Thrid_font{
+    height:4.475vh;
+    top: 6vh;
+    left: 2.81%;
+}
+
+#Thrid_logo{
+    height: 8.325vh;
+    top: 2.85vh;
+    left: 20.14%;
+}
+
+#Thrid_manage{
+    height: 5.2vh;
+    top: 13.75vh;
+    left: 2.81%;
+}
+
+#Thrid_moon{
+    position: absolute;
+    height: 75.825vh;
+    top: 6vh;
+    left: 13.1%;
+}
+
+#Thrid_behind_hill, #Thrid_front_hill{
+    position: absolute;
+    width: -webkit-fill-available;
+    bottom: 0;
+}
+
+#Thrid_front_hill{
+    height: 27vh;
+}
+
+#Thrid_dear{
+    position: absolute;
+    height: 17.225vh;
+    bottom: 14vh;
+    left: 62.66%;
+}
+
+.Thrid_wendang{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+.Thrid_textone, .Thrid_texttwo, .Thrid_textthree{
+    position: absolute;
+    width: -webkit-fill-available;
+    bottom: 10vh;
+    animation: ThridText 2s linear;
+    height: 51vh;
+}
+@keyframes ThridText{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.Thrid_texttwo, .Thrid_textthree{
+    display: none;
+}
+
+
+#Thrid_arrow_1, #Thrid_arrow_2{
+    height: 2.725vh;
+    position: absolute;
+    bottom: 37.65vh;
+    left: 32%;
+    animation: Thrid_arrow 2s linear infinite;
+}
+@keyframes Thrid_arrow{
+    0%{transform:translateX(0);}
+    50%{transform:translateX(-10px);}
+    100%{transform:translateX(0);}
+}
+
+#Thrid_arrow_2{
+    left: 65%;
+}
+
+#Thrid_text_1, #Thrid_text_2, #Thrid_text_3{
+    position: absolute;
+    height: 51vh;
+
+}
+
+#Thrid_text_1{
+    left: 3.732%;
+}
+
+#Thrid_text_2{
+    left: 36.624%;
+}
+
+#Thrid_text_3{
+    left: 69.70%;
+}
+
+.Thrid_photo{
+    height: 25.75vh;
+    width: 35.375vh;
+    position: absolute;
+    bottom: 15.05vh;
+    border-radius: 20px;
+    background: url(../img3/5.jpg);
+    border: 2px solid #ff7b8a;
+    background-size: 100% 100%;
+}
+
+.Thrid_textone>.Thrid_photo{
+    left: 6.5%;
+}
+
+.Thrid_texttwo>.Thrid_photo{
+    left: 39.5%;
+}
+
+.Thrid_textthree>.Thrid_photo{
+    left: 72.5%;
+}
+
+#Thrid_flower{
+    position: absolute;
+    height: 6vh;
+    bottom: -12px;
+    right: 4%;
+}
