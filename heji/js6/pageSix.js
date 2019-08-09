@@ -52,7 +52,8 @@ var mySwiper = new Swiper('.swiper-container', {
 
 			} else if(this.activeIndex % 9 == 1) {
 				console.log("产品运营： 狡");
-
+				let x = document.getElementById("pageSixSwiperLeft");
+				x.style.display = "none";
 				$("#pageSixBoardTwo").removeClass("bounceOff");
 				$("#pageSixBoardTwo").addClass("bounceOn");
 
@@ -366,6 +367,5 @@ function bumen() {
 }
 
 function sixHua(){
-	let x = document.getElementById("pageSixSwiperLeft");
-	x.style.display = "none";
+	
 }

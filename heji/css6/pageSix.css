@@ -351,10 +351,7 @@
 	font-family: zzt1;
 	src: url('../font/zixintitle.ttf');
 }
-@font-face {
-	font-family: zzt2;
-	src: url('../font/zixincenter.ttf');
-}
+
 .pageSixLineOne {
 	font-size: 3.5vh;
 	font-family: zzt1;
@@ -384,7 +381,7 @@
 }
 
 #pageSixSwiperLeft{
-	display: inline-block;
+	display: none;
 	position: absolute;
 	right: 9vw;
 	top: 50%;
