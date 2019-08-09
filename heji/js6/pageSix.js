@@ -5,7 +5,7 @@ var mySwiper = new Swiper('.swiper-container', {
 	centeredSlides: true,
 	loop: false,
 	grabCursor: true, //变爪子
-	preventClicksPropagation: true, //整下点击事件
+	// preventClicksPropagation: true, //整下点击事件
 	touchRatio: 0.9, //滑动难易
 	iOSEdgeSwipeDetection: true, //禁止从边缘触发
 	//				touchAngle: 30,                         //触发角度
