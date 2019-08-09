@@ -17,7 +17,7 @@ document.querySelector("#pageFive_2").onscroll = () => {
 $(function(){
     $(".pageFifth").scroll(function(){
         var cc = $(this).scrollLeft()
-        console.log("混动条位置"+cc)
+//      console.log("混动条位置"+cc);
         if(cc > 120){
             document.querySelector('.five_texttwo').style.display = 'block';
         }
