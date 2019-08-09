@@ -37,6 +37,18 @@ body:before {
 	src: url(../fonts/subs.TTF);
 }
 
+input::-webkit-input-placeholder {
+	font-family: subs;
+}
+
+input::-ms-input-placeholder {
+	font-family: subs;
+}
+
+input::-moz-placeholder {
+	font-family: subs;
+}
+
 #box{
 	position: absolute;
     overflow: hidden;
@@ -113,10 +125,11 @@ body:before {
 	border-radius: 50px;
 	border: none;
 	padding-left: 4vw;
-	font-family: subs;
+/*	font-family: subs;*/
 	font-size: 18px;
 	outline: none;
 	margin-left: ;
+	color: grey;
 }
 
 #iq {

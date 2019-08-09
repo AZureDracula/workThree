@@ -142,12 +142,12 @@ body:before {
 	background-color: white;
 	border-radius: 50px;
 	border: none;
-	font-size: 13px;
+	font-size: 15px;
 	text-align: center;
-	color: black;
+	color: grey;
 	border: 0px;
 	outline: none;
-	font-family: subs;
+/*	font-weight: lighter;*/
 }
 
 #yuan {
@@ -213,14 +213,17 @@ select {
 
 input::-webkit-input-placeholder {
 	text-align: center;
+	font-family: subs;
 }
 
 input::-ms-input-placeholder {
 	text-align: center;
+	font-family: subs;
 }
 
 input::-moz-placeholder {
 	text-align: center;
+	font-family: subs;
 }
 
 select {
@@ -261,6 +264,7 @@ select:invalid {
 	font-family: subs;
 	border: 0px;
 	outline: none;
+	color: gray;
 }
 
 #cardTip {
