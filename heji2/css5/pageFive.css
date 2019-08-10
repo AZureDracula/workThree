@@ -51,25 +51,25 @@ body {
 .five_font{
     height: 17.75vh;
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 5;
-}
-
+    margin-left: 20px;
+}    
 #five_font, #five_logo, #five_media{
     position: absolute;
 }
 
 #five_font{
-    height:4.475vh;
-    top: 6vh;
+    height: 8vh;
+    top: 4vh;
     left: 2.81%;
 }
 
-#five_logo{
+/* #five_logo{
     height: 8.325vh;
     top: 2.85vh;
     left: 20.14%;
-}
+} */
 
 #five_media{
     height: 5.2vh;

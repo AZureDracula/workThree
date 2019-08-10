@@ -55,8 +55,9 @@ body {
 .Thrid_font{
     height: 17.75vh;
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 5;
+    margin-left: 20px;
 }
 
 #Thrid_font, #Thrid_logo, #Thrid_manage{
@@ -64,16 +65,16 @@ body {
 }
 
 #Thrid_font{
-    height:4.475vh;
-    top: 6vh;
+    height: 8vh;
+    top: 4vh;
     left: 2.81%;
 }
-
+/* 
 #Thrid_logo{
     height: 8.325vh;
     top: 2.85vh;
     left: 20.14%;
-}
+} */
 
 #Thrid_manage{
     height: 5.2vh;

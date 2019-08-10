@@ -261,10 +261,25 @@ select:invalid {
 	font-size: 18px;
 	padding-left: 20px;
 	padding-top: 20px;
-	font-family: subs;
+/*	font-family: subs;*/
 	border: 0px;
 	outline: none;
 	color: gray;
+}
+
+textarea::-webkit-input-placeholder {
+	/*text-align: center;*/
+	font-family: subs;
+}
+
+textarea::-ms-input-placeholder {
+	/*text-align: center;*/
+	font-family: subs;
+}
+
+textarea::-moz-placeholder {
+	/*text-align: center;*/
+	font-family: subs;
 }
 
 #cardTip {

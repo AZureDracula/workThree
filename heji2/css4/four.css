@@ -52,8 +52,9 @@ body {
 .Four_font{
     height: 17.75vh;
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 5;
+    margin-left: 20px;
 }
 
 #four_font, #four_logo, #four_product{
@@ -61,20 +62,20 @@ body {
 }
 
 #four_font{
-    height:4.475vh;
-    top: 8.1vh;
-    left: 3.73%;
+    height: 8vh;
+    top: 4vh;
+    left: 2.81%;
 }
 
-#four_logo{
+/* #four_logo{
     height: 8.325vh;
     top: 5.75vh;
     left: 21.14%;
-}
+} */
 
 #four_product{
     height: 5.2vh;
-    top: 15.75vh;
+    top: 13vh;
     left: 2.81%;
 }
 

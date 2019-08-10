@@ -381,7 +381,7 @@
 }
 
 #pageSixSwiperLeft{
-	display: none;
+	/*display: none;*/
 	position: absolute;
 	right: 9vw;
 	top: 50%;
